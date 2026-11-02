@@ -100,7 +100,6 @@ export function VisitPlanner() {
               <button type="submit" className="btn btn-primary mt-8 w-full">
                 <PawPrint size={17} aria-hidden="true" />{action}
               </button>
-              <p className="mt-4 text-sm text-muted">Just for fun: nothing you enter is sent or saved.</p>
             </form>
           )}
         </div>
