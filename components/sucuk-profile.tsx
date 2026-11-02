@@ -1,16 +1,17 @@
 import { BirthdayCopy } from "@/components/birthday-provider";
+
 const dailySchedule = [
   ["06:12", "Inspect the hallway"],
   ["08:40", "First serious nap"],
   ["12:03", "Request lunch as if breakfast never happened"],
-  ["15:20", "Window patrol and neighborhood research"],
+  ["15:20", "Window patrol and neighbourhood research"],
   ["19:00", "Appear wherever dinner is being prepared"],
   ["23:11", "Unexplained sprint through the house"],
 ];
 
 const favorites = [
   ["Best room", "The one everyone else is using"],
-  ["Favorite sound", "A cupboard opening two rooms away"],
+  ["Favourite sound", "A cupboard opening two rooms away"],
   ["Preferred weather", "Sunbeam with a light blanket"],
   ["Signature move", "Sitting exactly where you need to be"],
   ["Current project", "Making the basket more comfortable"],
@@ -19,45 +20,50 @@ const favorites = [
 
 export function SucukProfile() {
   return (
-    <section id="life" className="relative z-10 bg-background px-5 py-20 text-foreground sm:px-8 sm:py-28 lg:px-10 lg:py-36">
-      <div className="mx-auto max-w-[1500px]">
-        <div className="section-kicker">
-          <span><BirthdayCopy birthday="03 / The birthday dossier">03 / Field notes</BirthdayCopy></span>
-          <span className="sucuk-seal" aria-label="Sucuk approved">S</span>
-        </div>
-
-        <div className="grid gap-12 pt-12 lg:grid-cols-[0.85fr_1.35fr] lg:gap-24 lg:pt-20">
+    <section id="life" className="band band-life" aria-labelledby="life-title">
+      <div className="section-inner">
+        <div className="grid gap-12 lg:grid-cols-[0.9fr_1.4fr] lg:gap-20">
           <div>
-            <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-foreground/70"><BirthdayCopy birthday="Age: two. Attitude: timeless.">A life in detail</BirthdayCopy></p>
-            <h2 className="mt-5 max-w-xl font-display text-[clamp(3.5rem,7vw,8rem)] italic leading-[0.88] tracking-[-0.055em]">
+            <h2 id="life-title" className="heading heading-xl">
               <BirthdayCopy birthday="Older. Softer. Still in charge.">The Sucuk dossier.</BirthdayCopy>
             </h2>
-            <p className="mt-8 max-w-md text-base leading-8 text-foreground/75">
-              <BirthdayCopy birthday="Two candles, zero responsibilities. The birthday boy has spent two years perfecting the art of being Sucuk. Here are a few of his very particular preferences.">Sucuk is a quiet domestic strategist with excellent hearing, soft opinions, and a firm belief that every object becomes better when occupied by a cat.</BirthdayCopy>
+            <p className="lede mt-7">
+              <BirthdayCopy birthday="Two candles, zero responsibilities. He has spent two years perfecting the art of being Sucuk, and he has opinions.">
+                A quiet domestic strategist with excellent hearing, soft opinions, and a firm belief that every object improves once a cat sits on it.
+              </BirthdayCopy>
             </p>
           </div>
 
-          <div className="border-t border-foreground/20">
-            {favorites.map(([label, value], index) => (
-              <div key={label} className="grid grid-cols-[2.5rem_1fr] gap-4 border-b border-foreground/15 py-5 sm:grid-cols-[3.5rem_12rem_1fr] sm:items-baseline">
-                <span className="font-mono text-[10px] text-foreground/60">{String(index + 1).padStart(2, "0")}</span>
-                <span className="hidden text-xs font-semibold uppercase tracking-[0.12em] text-foreground/70 sm:block">{label}</span>
-                <span className="font-display text-xl italic sm:text-2xl"><span className="mb-1 block text-[10px] font-sans font-semibold uppercase tracking-[0.12em] text-foreground/65 sm:hidden">{label}</span>{value}</span>
+          <dl className="grid gap-x-10 sm:grid-cols-2">
+            {favorites.map(([label, value]) => (
+              <div key={label} className="border-t border-line py-5">
+                <dt className="label">{label}</dt>
+                <dd className="mt-1 text-xl font-semibold leading-snug tracking-[-0.01em] sm:text-2xl">{value}</dd>
               </div>
             ))}
-          </div>
+          </dl>
         </div>
 
-        <div className="mt-24 grid gap-12 border-t border-foreground/20 pt-12 lg:grid-cols-[0.7fr_1.3fr] lg:gap-24">
+        <div className="mt-20 grid gap-10 lg:mt-28 lg:grid-cols-[0.9fr_1.4fr] lg:gap-20">
           <div>
-            <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-foreground/70"><BirthdayCopy birthday="The birthday itinerary">A typical day</BirthdayCopy></p>
-            <p className="mt-4 max-w-sm text-sm leading-7 text-foreground/70"><BirthdayCopy birthday="The party follows his usual schedule. All celebrations must fit around six extremely important appointments with absolutely nothing.">Times are approximate. Sucuk does not recognize clocks, deadlines, or the concept of being late.</BirthdayCopy></p>
+            <h3 className="heading heading-md">
+              <BirthdayCopy birthday="The birthday itinerary">A typical day</BirthdayCopy>
+            </h3>
+            <p className="body-copy mt-4 max-w-sm">
+              <BirthdayCopy birthday="The party follows his usual schedule. Celebrations must fit around six extremely important appointments with nothing.">
+                Times are approximate. Sucuk does not recognise clocks, deadlines, or the concept of being late.
+              </BirthdayCopy>
+            </p>
           </div>
-          <ol>
-            {dailySchedule.map(([time, activity]) => (
-              <li key={time} className="grid grid-cols-[4.5rem_1fr] border-b border-foreground/15 py-4 sm:grid-cols-[6rem_1fr]">
-                <time className="font-mono text-xs text-foreground/65">{time}</time>
-                <span className="text-sm sm:text-base">{activity}</span>
+          <ol className="timeline">
+            {dailySchedule.map(([time, activity], index) => (
+              <li key={time} className="relative grid grid-cols-[4.5rem_1.5rem_1fr] items-baseline gap-x-3 pb-6 last:pb-0 sm:grid-cols-[5.5rem_1.5rem_1fr]">
+                <time className="tabular font-semibold">{time}</time>
+                <span className="relative flex justify-center self-stretch" aria-hidden="true">
+                  {index < dailySchedule.length - 1 && <span className="absolute top-3 bottom-[-1.5rem] w-0.5 bg-line" />}
+                  <span className="timeline-dot relative mt-1.5" />
+                </span>
+                <span className="text-lg">{activity}</span>
               </li>
             ))}
           </ol>

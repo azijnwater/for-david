@@ -1,24 +1,27 @@
-import { BirthdayCopy } from "@/components/birthday-provider";
 import { ArrowUp } from "lucide-react";
+import { BirthdayCopy } from "@/components/birthday-provider";
+import { SucukMark } from "@/components/sucuk-mark";
 
 export function Footer() {
   return (
-    <footer className="relative z-10 bg-[var(--surface-strong)] px-5 pb-6 text-foreground sm:px-8 sm:pb-8 lg:px-10">
-      <div className="mx-auto flex max-w-[1500px] items-end justify-between border-t border-foreground/15 pt-6">
-        <div>
-          <p className="text-sm font-semibold tracking-[0.2em]">SUCUK</p>
-          <p className="mt-1 text-xs text-foreground/70"><BirthdayCopy birthday="Two years loved. A lifetime to go. Happy birthday, Sucuk.">Made from ordinary days.</BirthdayCopy></p>
-        </div>
-        <div className="flex items-center gap-5">
-          <p className="hidden font-mono text-[10px] uppercase tracking-[0.18em] text-foreground/65 sm:block">
-            © 2026
-          </p>
+    <footer className="band band-footer">
+      <div className="mx-auto max-w-[1320px] px-5 pb-8 pt-16 sm:px-10 sm:pt-24">
+        <p className="heading text-[clamp(3rem,10vw,8.5rem)] leading-[0.9]">
+          <BirthdayCopy birthday="Happy birthday, Sucuk.">Sucuk.</BirthdayCopy>
+        </p>
+        <div className="mt-10 flex items-end justify-between gap-6 border-t border-line pt-6">
+          <div className="flex items-center gap-3">
+            <SucukMark className="size-10 shrink-0" />
+            <p className="text-muted">
+              <BirthdayCopy birthday="Two years loved, a lifetime to go.">Made from ordinary days. © 2026</BirthdayCopy>
+            </p>
+          </div>
           <a
             href="#top"
             aria-label="Back to top"
-            className="grid size-10 place-items-center rounded-full border border-foreground/15 transition-colors hover:bg-foreground hover:text-background focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground"
+            className="grid size-12 shrink-0 place-items-center rounded-full shadow-[inset_0_0_0_1.5px_var(--line)] transition-colors hover:bg-foreground hover:text-background"
           >
-            <ArrowUp aria-hidden="true" size={15} />
+            <ArrowUp aria-hidden="true" size={18} />
           </a>
         </div>
       </div>

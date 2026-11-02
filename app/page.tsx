@@ -9,8 +9,9 @@ import { BirthdayProvider } from "@/components/birthday-provider";
 
 export default function Home() {
   return (
-    <BirthdayProvider><div id="top">
+    <>
       <a className="skip-link" href="#main-content">Skip to content</a>
+      <BirthdayProvider>
       <main id="main-content">
         <PhotoArchive />
         <About />
@@ -20,6 +21,7 @@ export default function Home() {
         <RelatedSite />
       </main>
       <Footer />
-    </div></BirthdayProvider>
+      </BirthdayProvider>
+    </>
   );
 }

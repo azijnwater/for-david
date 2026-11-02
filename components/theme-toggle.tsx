@@ -12,11 +12,11 @@ export function ThemeToggle() {
       type="button"
       aria-label={isDark ? "Switch to light theme" : "Switch to dark theme"}
       title={isDark ? "Switch to light theme" : "Switch to dark theme"}
-      className="grid size-10 place-items-center rounded-full border border-foreground/15 bg-background/45 text-foreground shadow-sm backdrop-blur-md transition-colors hover:bg-foreground hover:text-background focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground"
+      className="grid size-11 place-items-center rounded-full text-foreground shadow-[inset_0_0_0_1.5px_var(--line)] transition-colors hover:bg-foreground hover:text-background"
       onClick={() => setTheme(isDark ? "light" : "dark")}
     >
-      <Moon aria-hidden="true" className="block dark:hidden" size={16} />
-      <Sun aria-hidden="true" className="hidden dark:block" size={16} />
+      <Moon aria-hidden="true" className="block dark:hidden" size={17} />
+      <Sun aria-hidden="true" className="hidden dark:block" size={17} />
     </button>
   );
 }

@@ -1,4 +1,6 @@
+import { Plus } from "lucide-react";
 import { BirthdayCopy } from "@/components/birthday-provider";
+
 const achievements = [
   ["2024", "The story begins. A small cat makes a very big entrance."],
   ["2025", "First birthday. Already an expert in naps and household supervision."],
@@ -28,18 +30,68 @@ const questions = [
 
 export function SucukJournal() {
   return (
-    <section id="journal" className="relative z-10 bg-[var(--surface-strong)] px-5 py-20 text-foreground sm:px-8 sm:py-28 lg:px-10 lg:py-36">
-      <div className="mx-auto max-w-[1500px]">
-        <div className="section-kicker"><span><BirthdayCopy birthday="04 / Two years of good trouble">04 / The journal</BirthdayCopy></span><span><BirthdayCopy birthday="The birthday scrapbook">Notes, honors &amp; household policy</BirthdayCopy></span></div>
-        <div className="grid gap-14 pt-14 lg:grid-cols-[1fr_1.1fr] lg:gap-24 lg:pt-20">
-          <div><p className="font-mono text-[10px] uppercase tracking-[0.2em] text-foreground/70">Selected achievements</p><h2 className="mt-5 max-w-3xl font-display text-[clamp(3.6rem,7vw,8rem)] italic leading-[0.86] tracking-[-0.055em]"><BirthdayCopy birthday="Little paws. Big milestones.">A distinguished career in being Sucuk.</BirthdayCopy></h2></div>
-          <div className="border-t border-foreground/20">{achievements.map(([year, item]) => <div key={year} className="grid grid-cols-[4rem_1fr] gap-5 border-b border-foreground/15 py-5"><span className="font-mono text-xs text-foreground/60">{year}</span><p className="text-sm leading-7 sm:text-base">{item}</p></div>)}</div>
+    <section id="journal" className="band band-journal" aria-labelledby="journal-title">
+      <div className="section-inner">
+        <h2 id="journal-title" className="heading heading-xl max-w-[14ch]">
+          <BirthdayCopy birthday="Little paws, big milestones.">A distinguished career in being Sucuk.</BirthdayCopy>
+        </h2>
+
+        <ol className="mt-12 grid gap-8 sm:grid-cols-3 sm:gap-6 lg:mt-16" aria-label="Milestones">
+          {achievements.map(([year, item], index) => {
+            const current = index === achievements.length - 1;
+            return (
+              <li key={year} className="timeline-item relative" data-current={current}>
+                <div className="flex items-center gap-3" aria-hidden="true">
+                  <span className="timeline-dot shrink-0" />
+                  {!current && <span className="hidden h-0.5 flex-1 bg-line sm:block" />}
+                </div>
+                <p className="heading heading-lg mt-4 tabular">{year}{current && <span className="sr-only"> (today)</span>}</p>
+                <p className="body-copy mt-2 max-w-[22em]">{item}</p>
+              </li>
+            );
+          })}
+        </ol>
+
+        <div className="mt-20 grid gap-14 lg:mt-28 lg:grid-cols-2 lg:gap-20">
+          <div>
+            <h3 className="heading heading-md"><BirthdayCopy birthday="Party etiquette">House rules</BirthdayCopy></h3>
+            <ol className="rule-list mt-6">
+              {rules.map((rule, index) => (
+                <li key={rule} className="grid grid-cols-[2rem_1fr] py-4">
+                  <span className="tabular font-semibold text-muted">{index + 1}.</span>
+                  <span>{rule}</span>
+                </li>
+              ))}
+            </ol>
+          </div>
+          <div>
+            <h3 className="heading heading-md"><BirthdayCopy birthday="Birthday wishes from around the house">Reviews from around the house</BirthdayCopy></h3>
+            <div className="mt-6 grid gap-x-8 gap-y-9 sm:grid-cols-2">
+              {reviews.map(([author, quote]) => (
+                <figure key={author}>
+                  <span className="quote-mark block" aria-hidden="true">“</span>
+                  <blockquote className="text-xl font-semibold leading-snug tracking-[-0.01em]">{quote}</blockquote>
+                  <figcaption className="label mt-3">{author}</figcaption>
+                </figure>
+              ))}
+            </div>
+          </div>
         </div>
-        <div className="mt-24 grid gap-8 lg:grid-cols-2">
-          <div className="border-t border-foreground/20 pt-7"><p className="font-mono text-[10px] uppercase tracking-[0.2em] text-foreground/70"><BirthdayCopy birthday="Party etiquette">House rules</BirthdayCopy></p><ol className="mt-7">{rules.map((rule, index) => <li key={rule} className="grid grid-cols-[2.5rem_1fr] border-b border-foreground/15 py-4"><span className="font-display text-lg italic text-foreground/55">{index + 1}</span><span className="text-sm leading-7">{rule}</span></li>)}</ol></div>
-          <div className="border-t border-foreground/20 pt-7"><p className="font-mono text-[10px] uppercase tracking-[0.2em] text-foreground/70"><BirthdayCopy birthday="Birthday wishes from the household">Peer reviews</BirthdayCopy></p><div className="mt-7 grid gap-3 sm:grid-cols-2">{reviews.map(([author, quote]) => <figure key={author} className="rounded-xl border border-foreground/15 bg-background/35 p-5"><blockquote className="font-display text-xl italic leading-snug">“{quote}”</blockquote><figcaption className="mt-5 font-mono text-[10px] uppercase tracking-[0.16em] text-foreground/65">— {author}</figcaption></figure>)}</div></div>
+
+        <div className="faq mt-20 grid gap-8 lg:mt-28 lg:grid-cols-[0.8fr_1.4fr] lg:gap-20">
+          <h3 className="heading heading-md"><BirthdayCopy birthday="Before you join the party">Questions people ask</BirthdayCopy></h3>
+          <div className="rule-list">
+            {questions.map(([question, answer]) => (
+              <details key={question} className="group">
+                <summary className="flex min-h-14 cursor-pointer items-center justify-between gap-6 py-4 text-lg font-semibold">
+                  {question}
+                  <Plus className="faq-icon shrink-0" size={20} aria-hidden="true" />
+                </summary>
+                <p className="body-copy pb-5 pr-10">{answer}</p>
+              </details>
+            ))}
+          </div>
         </div>
-        <div className="mt-24 border-t border-foreground/20 pt-12"><div className="grid gap-10 lg:grid-cols-[0.65fr_1.35fr] lg:gap-24"><div><p className="font-mono text-[10px] uppercase tracking-[0.2em] text-foreground/70">Frequently asked</p><h3 className="mt-4 font-display text-4xl italic sm:text-5xl"><BirthdayCopy birthday="Before you join the party.">Questions from the public.</BirthdayCopy></h3></div><dl>{questions.map(([question, answer]) => <div key={question} className="border-b border-foreground/15 py-5 first:border-t"><dt className="font-semibold">{question}</dt><dd className="mt-2 max-w-3xl text-sm leading-7 text-foreground/70">{answer}</dd></div>)}</dl></div></div>
       </div>
     </section>
   );

@@ -1,69 +1,108 @@
 "use client";
 
-import { BirthdayCopy } from "@/components/birthday-provider";
-
 import { FormEvent, useMemo, useState } from "react";
-import { CalendarDays, Check, Clock, PawPrint } from "lucide-react";
+import { Check, PawPrint } from "lucide-react";
+import { BirthdayCopy, useBirthday } from "@/components/birthday-provider";
 
 function timesForDate(date: string) {
-  if (!date) return ["10:30", "12:00", "14:30", "16:00", "18:15"];
   let seed = [...date].reduce((total, character) => total + character.charCodeAt(0), 0);
   const candidates = ["09:45", "10:15", "10:50", "11:30", "12:10", "13:20", "14:05", "14:45", "15:30", "16:10", "17:00", "17:40", "18:15", "19:00"];
-  return candidates.map((slot) => ({ slot, sort: (seed = (seed * 9301 + 49297) % 233280) })).sort((a, b) => a.sort - b.sort).slice(0, 5).map(({ slot }) => slot).sort();
+  return candidates
+    .map((slot) => ({ slot, sort: (seed = (seed * 9301 + 49297) % 233280) }))
+    .sort((a, b) => a.sort - b.sort)
+    .slice(0, 6)
+    .map(({ slot }) => slot)
+    .sort();
 }
 
 export function VisitPlanner() {
+  const birthday = useBirthday();
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
   const [name, setName] = useState("");
   const [confirmed, setConfirmed] = useState(false);
   const minimumDate = useMemo(() => new Date().toISOString().slice(0, 10), []);
-  const times = useMemo(() => timesForDate(date), [date]);
+  const times = useMemo(() => (date ? timesForDate(date) : []), [date]);
 
   function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setConfirmed(true);
   }
 
-  return (
-    <section id="visit" className="relative z-10 overflow-hidden bg-[var(--surface)] px-5 py-20 text-foreground sm:px-8 sm:py-28 lg:px-10 lg:py-36">
-      <div aria-hidden="true" className="paw-pattern absolute inset-0 opacity-40" />
-      <div className="relative mx-auto max-w-[1500px]">
-        <div className="section-kicker"><span><BirthdayCopy birthday="05 / You’re invited">05 / Visiting hours</BirthdayCopy></span><span>By appointment · subject to naps</span></div>
-        <div className="grid gap-14 pt-12 lg:grid-cols-[1fr_0.9fr] lg:gap-24 lg:pt-20">
-          <div>
-            <div className="inline-flex items-center gap-2 rounded-full border border-foreground/20 px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.16em]"><PawPrint size={13} aria-hidden="true" /> <BirthdayCopy birthday="The second birthday social club">Sucuk social club</BirthdayCopy></div>
-            <h2 className="mt-7 max-w-4xl font-display text-[clamp(3.8rem,8vw,9rem)] italic leading-[0.84] tracking-[-0.06em]"><BirthdayCopy birthday="Come say happy birthday.">Come meet Sucuk.</BirthdayCopy></h2>
-            <p className="mt-8 max-w-xl text-base leading-8 text-foreground/75"><BirthdayCopy birthday="The guest of honor is accepting gentle compliments and respectful admiration. Pick a time to celebrate with the household. Party hat optional; letting the cat come to you is essential.">Reserve a quiet audience with the smallest host in the house. Bring patience, a respectful distance, and no expectation that Sucuk will follow the itinerary.</BirthdayCopy></p>
-            <div className="mt-10 grid max-w-xl grid-cols-2 gap-px overflow-hidden rounded-xl border border-foreground/15 bg-foreground/15">
-              <div className="bg-surface p-5"><p className="font-mono text-[10px] uppercase tracking-[0.16em] text-foreground/65">Duration</p><p className="mt-2 font-display text-2xl italic">20 minutes</p></div>
-              <div className="bg-surface p-5"><p className="font-mono text-[10px] uppercase tracking-[0.16em] text-foreground/65">Admission</p><p className="mt-2 font-display text-2xl italic"><BirthdayCopy birthday="A birthday wish">One compliment</BirthdayCopy></p></div>
-            </div>
-            <p className="mt-5 max-w-xl text-xs leading-6 text-foreground/65">This is a playful request for the household, not a guaranteed public booking. No personal information leaves this page.</p>
-          </div>
+  const action = birthday ? "RSVP to the party" : "Request a visit";
 
-          <div className="rounded-2xl border border-foreground/15 bg-background/80 p-5 shadow-[0_24px_70px_-40px_rgba(28,24,18,0.45)] backdrop-blur sm:p-8">
-            {confirmed ? (
-              <div className="flex min-h-[26rem] flex-col items-center justify-center text-center" aria-live="polite">
-                <span className="grid size-14 place-items-center rounded-full bg-foreground text-background"><Check size={22} aria-hidden="true" /></span>
-                <p className="mt-6 font-mono text-[10px] uppercase tracking-[0.2em] text-foreground/65">Request noted</p>
-                <h3 className="mt-3 font-display text-4xl italic">Sucuk will consider it.</h3>
-                <p className="mt-4 max-w-sm text-sm leading-7 text-foreground/70">{name || "Esteemed visitor"}, your request for {new Date(`${date}T12:00:00`).toLocaleDateString("en", { weekday: "long", month: "long", day: "numeric" })} at {time} has been added to this browser.</p>
-                <button type="button" onClick={() => setConfirmed(false)} className="mt-8 rounded-full border border-foreground/20 px-5 py-3 text-sm font-medium hover:bg-foreground hover:text-background focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground">Choose another time</button>
-              </div>
-            ) : (
-              <form onSubmit={submit}>
-                <h3 className="font-display text-3xl italic"><BirthdayCopy birthday="Your party invitation">Request a visit</BirthdayCopy></h3>
-                <p className="mt-2 text-sm text-foreground/65">Choose a day, then select one of Sucuk&apos;s available windows.</p>
-                <label className="mt-7 block text-xs font-semibold uppercase tracking-[0.12em]" htmlFor="visitor-name">Your name</label>
-                <input id="visitor-name" value={name} onChange={(event) => setName(event.target.value)} placeholder="Friend of Sucuk" className="mt-2 h-12 w-full rounded-lg border border-foreground/20 bg-transparent px-4 text-sm outline-none placeholder:text-foreground/40 focus:border-foreground" />
-                <label className="mt-6 block text-xs font-semibold uppercase tracking-[0.12em]" htmlFor="visit-date"><CalendarDays className="mr-2 inline" size={14} aria-hidden="true" />Date</label>
-                <input required id="visit-date" type="date" min={minimumDate} value={date} onChange={(event) => { setDate(event.target.value); setTime(""); }} className="mt-2 h-12 w-full rounded-lg border border-foreground/20 bg-transparent px-4 text-sm outline-none focus:border-foreground" />
-                <fieldset className="mt-6"><legend className="text-xs font-semibold uppercase tracking-[0.12em]"><Clock className="mr-2 inline" size={14} aria-hidden="true" />Times for this day</legend><p className="mt-2 text-xs leading-5 text-foreground/60">Sucuk keeps different visiting hours every day. Choose a date to reveal that day&apos;s schedule.</p><div className="mt-3 grid grid-cols-2 gap-2 sm:grid-cols-3">{times.map((slot) => <label key={slot} className={`cursor-pointer rounded-lg border px-3 py-3 text-center font-mono text-xs transition-colors ${time === slot ? "border-foreground bg-foreground text-background" : "border-foreground/20 hover:border-foreground/50"}`}><input required className="sr-only" type="radio" name="time" value={slot} checked={time === slot} onChange={() => setTime(slot)} />{slot}</label>)}</div></fieldset>
-                <button type="submit" className="mt-8 inline-flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-sm font-semibold text-background transition-transform hover:scale-[1.01] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground"><PawPrint size={15} aria-hidden="true" /><BirthdayCopy birthday="Count me in, birthday boy">Request time with Sucuk</BirthdayCopy></button>
-              </form>
-            )}
-          </div>
+  return (
+    <section id="visit" className="band band-visit" aria-labelledby="visit-title">
+      <div className="section-inner grid gap-14 lg:grid-cols-[1fr_0.95fr] lg:gap-20">
+        <div>
+          <h2 id="visit-title" className="heading heading-xl max-w-[11ch]">
+            <BirthdayCopy birthday="Come say happy birthday.">Come meet Sucuk.</BirthdayCopy>
+          </h2>
+          <p className="lede mt-7">
+            <BirthdayCopy birthday="The guest of honour is accepting gentle compliments and respectful admiration. Pick a time to celebrate with the household. Party hat optional; letting the cat come to you is essential.">
+              Ask for a quiet audience with the smallest host in the house. Bring patience, keep a respectful distance, and don’t expect Sucuk to follow the plan.
+            </BirthdayCopy>
+          </p>
+          <dl className="mt-10 grid max-w-lg grid-cols-2 gap-6 border-t border-line pt-6">
+            <div>
+              <dt className="label">Visits last</dt>
+              <dd className="mt-1 text-2xl font-semibold">20 minutes</dd>
+            </div>
+            <div>
+              <dt className="label">Admission</dt>
+              <dd className="mt-1 text-2xl font-semibold"><BirthdayCopy birthday="One birthday wish">One compliment</BirthdayCopy></dd>
+            </div>
+          </dl>
+        </div>
+
+        <div className="card p-6 sm:p-9">
+          {confirmed ? (
+            <div className="flex min-h-[26rem] flex-col items-center justify-center text-center" role="status">
+              <span className="grid size-16 place-items-center rounded-full bg-accent text-on-accent"><Check size={26} aria-hidden="true" /></span>
+              <h3 className="heading heading-md mt-6">
+                {birthday ? "You’re on the guest list." : "Visit requested."}
+              </h3>
+              <p className="body-copy mt-4 max-w-sm">
+                {name || "Friend of Sucuk"}, you asked for{" "}
+                {new Date(`${date}T12:00:00`).toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long" })} at {time}. Sucuk will consider it.
+              </p>
+              <button type="button" onClick={() => setConfirmed(false)} className="btn btn-ghost mt-8">Choose another time</button>
+            </div>
+          ) : (
+            <form onSubmit={submit}>
+              <h3 className="heading heading-md"><BirthdayCopy birthday="Your party invitation">Plan a visit</BirthdayCopy></h3>
+              <p className="body-copy mt-2">Pick a day to see when Sucuk is free.</p>
+
+              <label className="label mt-7 block" htmlFor="visitor-name">Your name</label>
+              <input id="visitor-name" autoComplete="given-name" value={name} onChange={(event) => setName(event.target.value)} placeholder="Friend of Sucuk" className="field mt-2" />
+
+              <label className="label mt-6 block" htmlFor="visit-date">Day</label>
+              <input required id="visit-date" type="date" min={minimumDate} value={date} onChange={(event) => { setDate(event.target.value); setTime(""); }} className="field mt-2" />
+
+              <fieldset className="mt-6">
+                <legend className="label">Time</legend>
+                {date ? (
+                  <div className="mt-2 grid grid-cols-3 gap-2">
+                    {times.map((slot) => (
+                      <label key={slot} className="slot">
+                        <input required className="sr-only" type="radio" name="time" value={slot} checked={time === slot} onChange={() => setTime(slot)} />
+                        {slot}
+                      </label>
+                    ))}
+                  </div>
+                ) : (
+                  <p className="mt-2 rounded-[var(--radius-sm)] border-[1.5px] border-dashed border-line px-4 py-4 text-muted">
+                    Sucuk keeps different hours every day. Choose a day first.
+                  </p>
+                )}
+              </fieldset>
+
+              <button type="submit" className="btn btn-primary mt-8 w-full">
+                <PawPrint size={17} aria-hidden="true" />{action}
+              </button>
+              <p className="mt-4 text-sm text-muted">Just for fun: nothing you enter is sent or saved.</p>
+            </form>
+          )}
         </div>
       </div>
     </section>

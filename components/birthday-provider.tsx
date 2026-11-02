@@ -1,23 +1,35 @@
 "use client";
 
-import { createContext, useContext, useState, type ReactNode } from "react";
-import { Cake, Sparkles } from "lucide-react";
+import { createContext, useContext, useState, type CSSProperties, type ReactNode } from "react";
+import { Cake, Wind, Flame } from "lucide-react";
 
 const BirthdayContext = createContext(true);
+
+export function useBirthday() {
+  return useContext(BirthdayContext);
+}
 
 export function BirthdayProvider({ children }: { children: ReactNode }) {
   const [enabled, setEnabled] = useState(true);
   return (
     <BirthdayContext.Provider value={enabled}>
-      <div className={enabled ? "birthday-site" : "standard-site"}>
-        <div className="birthday-toolbar">
-          <span className="birthday-toolbar-note">{enabled ? "02 NOVEMBER · THE SECOND BIRTHDAY EDITION" : "SUCUK · THE EVERYDAY EDITION"}</span>
-          <button className="birthday-switch" type="button" role="switch" aria-checked={enabled} aria-label="Birthday mode" onClick={() => setEnabled(!enabled)}>
-            <Cake size={16} aria-hidden="true" />
-            <span>Birthday mode <b>{enabled ? "ON" : "OFF"}</b></span>
+      <div id="top" className={`site ${enabled ? "birthday-site" : "standard-site"}`}>
+        <aside className="edition-bar" aria-label="Site edition">
+          <span className="edition-note hidden sm:inline">
+            {enabled ? "Sucuk turns two today, 2 November" : "The everyday edition"}
+          </span>
+          <button
+            className="birthday-switch"
+            type="button"
+            role="switch"
+            aria-checked={enabled}
+            onClick={() => setEnabled(!enabled)}
+          >
+            <Cake size={18} aria-hidden="true" />
+            <span>Birthday mode</span>
             <span className="switch-track" aria-hidden="true"><span /></span>
           </button>
-        </div>
+        </aside>
         {children}
       </div>
     </BirthdayContext.Provider>
@@ -25,20 +37,52 @@ export function BirthdayProvider({ children }: { children: ReactNode }) {
 }
 
 export function BirthdayCopy({ birthday, children }: { birthday: ReactNode; children: ReactNode }) {
-  return <>{useContext(BirthdayContext) ? birthday : children}</>;
+  return <>{useBirthday() ? birthday : children}</>;
 }
 
-export function BirthdayDecor() {
-  const enabled = useContext(BirthdayContext);
-  const [celebrations, setCelebrations] = useState(0);
-  if (!enabled) return null;
+/** The striped number candle shown in the birthday headline. Decorative; the h1 text carries the meaning. */
+export function Candle({ lit }: { lit: boolean }) {
+  return (
+    <span className="candle" data-lit={lit} aria-hidden="true">
+      <span className="candle-smoke" />
+      <span className="candle-flame" />
+      <span className="candle-wick" />
+      <span className="candle-number">2</span>
+    </span>
+  );
+}
+
+/** Blowing out the candle is the one celebration moment: the flame goes out and confetti falls. */
+export function useCandle() {
+  const [lit, setLit] = useState(true);
+  const [wishes, setWishes] = useState(0);
+  const toggle = () => {
+    if (lit) setWishes((count) => count + 1);
+    setLit(!lit);
+  };
+  return { lit, wishes, toggle };
+}
+
+export function CandleButton({ lit, wishes, onToggle }: { lit: boolean; wishes: number; onToggle: () => void }) {
   return (
     <>
-      <div className="party-decoration" aria-hidden="true"><span className="party-star star-one">✳</span><span className="party-star star-two">✦</span><span className="party-doodle">hip, hip,<br />meow!</span></div>
-      <div className="birthday-stamp" aria-label="Two years of Sucuk"><span>OFFICIALLY</span><strong>2</strong><span>YEARS OF SUCUK</span></div>
-      <button type="button" className="celebrate-button" onClick={() => setCelebrations(value => value + 1)}><Sparkles size={16} aria-hidden="true" /> A little birthday confetti</button>
-      <span className="sr-only" role="status">{celebrations > 0 ? `Happy second birthday, Sucuk! Celebration ${celebrations}.` : ""}</span>
-      {celebrations > 0 && <div key={celebrations} className="confetti" aria-hidden="true">{Array.from({ length: 32 }, (_, index) => <i key={index} style={{ "--i": index, left: `${(index * 37) % 100}%`, animationDelay: `${(index % 7) * .07}s` } as React.CSSProperties} />)}</div>}
+      <button type="button" className="btn btn-secondary" onClick={onToggle}>
+        {lit ? <Wind size={17} aria-hidden="true" /> : <Flame size={17} aria-hidden="true" />}
+        {lit ? "Blow out the candle" : "Light it again"}
+      </button>
+      <span className="sr-only" role="status">
+        {!lit ? "Candle blown out. Happy second birthday, Sucuk!" : ""}
+      </span>
+      {!lit && (
+        <div key={wishes} className="confetti" aria-hidden="true">
+          {Array.from({ length: 36 }, (_, index) => (
+            <i
+              key={index}
+              style={{ left: `${(index * 37) % 100}%`, animationDelay: `${(index % 7) * 0.07}s` } as CSSProperties}
+            />
+          ))}
+        </div>
+      )}
     </>
   );
 }

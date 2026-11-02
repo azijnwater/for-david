@@ -13,11 +13,10 @@ const cropPositions: Record<string, string> = {
 
 function PhotoTile({ photo, index, onSelect, priority = false }: { photo: Photo; index: number; onSelect: () => void; priority?: boolean }) {
   return (
-    <button type="button" aria-label={`Open photograph ${index + 1} of ${photos.length}: ${photo.title}`} className="photo-tile group relative block shrink-0 overflow-hidden rounded-[0.75rem] bg-foreground/8 shadow-[0_20px_55px_-28px_rgba(28,24,18,0.7)] focus-visible:z-30 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-foreground sm:rounded-[1rem] dark:ring-1 dark:ring-white/10" onClick={onSelect}>
+    <button type="button" aria-label={`Open photograph ${index + 1} of ${photos.length}: ${photo.title}`} className="photo-tile group relative block shrink-0 overflow-hidden bg-foreground/10 shadow-[0_20px_50px_-30px_rgba(31,35,70,0.75)] focus-visible:z-30 focus-visible:outline-offset-4" onClick={onSelect}>
       <Image src={photo.src} alt="" fill priority={priority} draggable={false} sizes="(max-width: 639px) 42vw, (max-width: 1023px) 30vw, 20vw" style={{ objectPosition: cropPositions[photo.id] }} className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.025]" />
-      <span className="photo-label absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent px-3 pb-3 pt-10 text-left text-white sm:px-4 sm:pb-4">
-        <span className="block font-mono text-[9px] uppercase tracking-[0.18em] text-white/75">{String(index + 1).padStart(2, "0")}</span>
-        <span className="mt-0.5 block font-display text-base italic leading-none sm:text-lg">{photo.title}</span>
+      <span className="photo-label absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#14172a]/80 via-[#14172a]/25 to-transparent px-3 pb-3 pt-10 text-left text-white sm:px-4 sm:pb-4">
+        <span className="block text-sm font-semibold leading-tight sm:text-base">{photo.title}</span>
       </span>
     </button>
   );
@@ -25,7 +24,7 @@ function PhotoTile({ photo, index, onSelect, priority = false }: { photo: Photo;
 
 function DuplicateTile({ photo }: { photo: Photo }) {
   return (
-    <div className="photo-tile relative shrink-0 overflow-hidden rounded-[0.75rem] bg-foreground/8 sm:rounded-[1rem]">
+    <div className="photo-tile relative shrink-0 overflow-hidden bg-foreground/10">
       <Image src={photo.src} alt="" fill draggable={false} sizes="(max-width: 639px) 42vw, (max-width: 1023px) 30vw, 20vw" style={{ objectPosition: cropPositions[photo.id] }} className="object-cover" />
     </div>
   );
