@@ -28,7 +28,7 @@ export class ScoreError extends Error {
     super(message);
   }
 }
-const limits: Record<GameId, number> = {
+const limits: Partial<Record<GameId, number>> = {
   "line-rider": 0,
   snake: 7890,
   breakout: 400,
@@ -119,7 +119,7 @@ export function validateScore(
     typeof score !== "number" ||
     !Number.isSafeInteger(score) ||
     score < 0 ||
-    score > limits[game]
+    score > (limits[game] ?? 100000)
   )
     throw new ScoreError("That score is outside this game's range.");
   if (elapsedSeconds < 1.5)

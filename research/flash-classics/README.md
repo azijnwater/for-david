@@ -1,6 +1,6 @@
 # Flash classics: reference recovery and reconstruction status
 
-This is a source-and-build audit for the 54 requested games. It does not claim that all 54 have been recreated. Edition choices favor well-known Flash entries; no universal popularity ranking is asserted.
+This records reference recovery and the modern Sucuk adaptations of all 54 requested games. Edition choices favor well-known Flash entries; no universal popularity ranking is asserted. These are playable, condensed cat adaptations, not verified exact recreations of the original games or their complete campaigns.
 
 ## Files recovered
 
@@ -19,6 +19,12 @@ The original binaries and archives stay in the ignored `.reference/flash-classic
 
 This is a source-based adaptation, not a verified bit-for-bit recreation of a particular historic SWF. Historic parity tests must run against a pinned original before claiming exact fidelity. Creative track building exports tracks rather than inventing a competitive score. The twelve existing scored minigames are preserved.
 
+The other 53 requests now have original Sucuk games built with React, TypeScript and Canvas. Shared genre systems provide platform movement, wall jumps, tunnel running, run-and-gun combat, tower defense and pathfinding, army economy and orders, inventory adventures, a trick quiz, turn-based party combat, life progression, flight and mining, room shooters, ballistic duels, constrained ragdolls, a cat-craze simulation and a pizza kitchen. Variants select their own rules and cat scenarios. Content is deliberately condensed (for example, three platform chapters, eight defense waves, five RPG encounters and twenty quiz questions), rather than the historic level corpus.
+
+Every game has its own direct page, including `/cushion-rider`; arcade cards are links, and there is no game dialog. The catalogue offers search, categories and pagination. The existing photo archive lightbox is unchanged. Original artwork uses Sucuk, Miso, Luna, Mochi and Pepper. No Flash player, SWF, Ruffle, original commercial art or original audio is shipped.
+
+Club Sucuk is a solo town with NPCs, fishing and outfits. Transforcats and Platform Purracing offer local controls; racing also has a solo rival. They do not implement online rooms, accounts, synchronized physics, chat servers or player-made level hosting. Global score persistence still requires the project's private Vercel Blob store and `BLOB_READ_WRITE_TOKEN`; the UI reports unavailability when it is absent. Device bests and Cushion Rider tracks work independently.
+
 ## Source findings and remaining work
 
 - **Canabalt:** [code](https://github.com/ninjamuffin99/canabalt-hf) is MIT; the separate [asset license](https://github.com/ninjamuffin99/canabalt-assets/blob/main/LICENSE.md) prohibits redistributing the original data. Replacement cat artwork/audio is required. Its variable jump duration, stumble slowdown, hallways, collapsing roofs, bombs and cranes are distinct systems. The existing generic Midnight zoomies game does not implement them all and is not renamed to Canabalt.
@@ -32,7 +38,7 @@ This is a source-based adaptation, not a verified bit-for-bit recreation of a pa
 - **QWOP:** the creator's current page loads a JavaScript/WebGL port, which is distinct from an original Flash SWF.
 - **GROW RPG:** the creator page describes later revisions; the recovered AS3 binary should not be presented as an unmodified 2005 original.
 
-The remaining **53 requested recreations are not implemented** in this change. Each requires a verified reference build, complete mechanic/content inventory, implementation or licensed source port, and gameplay/conformance tests.
+Exact historical fidelity remains unverified for all 54. The original games' full maps, puzzle content, item/skill tables, boss fights, animation/audio and network infrastructure are not reproduced by these condensed adaptations. Achieving exact recreations would require the fidelity work below. Catalogue implementation entries intentionally retain `exactParityVerified: false`.
 
 ## Fidelity gate
 

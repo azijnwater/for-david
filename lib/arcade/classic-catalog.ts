@@ -1,0 +1,795 @@
+export const classicGames = [
+  {
+    id: "classic-alien-hominid",
+    variant: "alien-hominid",
+    engine: "platform",
+    name: "Alien Sucuk",
+    genre: "Platform",
+    classic: "Alien Hominid",
+    description:
+      "A stranded Sucuk fights rogue vacuum cleaners with yarn projectiles.",
+    controls:
+      "Arrow keys or WASD move. Space jumps; hold for a higher jump. X acts or fires. E interacts. Use the on-screen controls on touch devices.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-platform-alien-hominid",
+    edition: "2002 Flash web release",
+  },
+  {
+    id: "classic-impossible-quiz",
+    variant: "impossible-quiz",
+    engine: "quiz",
+    name: "The Impossible Cat Quiz",
+    genre: "Puzzle",
+    classic: "The Impossible Quiz",
+    description:
+      "Original cat riddles, hidden paw interactions, and deliberately misleading answers.",
+    controls:
+      "Read carefully. Some answers hide in the question, the timer, or the scene. Three mistakes cost the round.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-quiz-impossible-quiz",
+    edition: "Original 2007 quiz",
+  },
+  {
+    id: "classic-club-penguin",
+    variant: "club-penguin",
+    engine: "social",
+    name: "Club Sucuk",
+    genre: "Social",
+    classic: "Club Penguin",
+    description:
+      "Visit a snowy cat neighbourhood, catch fish, shop for outfits and host Sucuk’s birthday party.",
+    controls:
+      "Choose a room, talk to the cat crew, and click the fishing reel when a fish bites. This is a solo town with NPC cats.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-social-club-penguin",
+    edition:
+      "Late classic Flash world; exact party/content snapshot must be pinned",
+  },
+  {
+    id: "classic-happy-wheels",
+    variant: "happy-wheels",
+    engine: "physics",
+    name: "Cushion Wheels",
+    genre: "Physics",
+    classic: "Happy Wheels",
+    description:
+      "A floppy toy-cat rider on household vehicles, with stuffing instead of gore.",
+    controls:
+      "Use the labelled controls below the field. Balance or play with Sucuk using the game’s physics rules.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-physics-happy-wheels",
+    edition: "Classic full Flash version, not a demo",
+  },
+  {
+    id: "classic-bloons-td",
+    variant: "bloons-td",
+    engine: "defense",
+    name: "Balloon Paw Defense",
+    genre: "Strategy",
+    classic: "Bloons Tower Defense",
+    description:
+      "Cat towers bat balloon toys with feathers, yarn and laser pointers.",
+    controls:
+      "Choose a tower, then select an empty build site. Select a tower to upgrade or sell it. Send the next wave when ready.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-defense-bloons-td",
+    edition: "Bloons TD 5, Flash",
+  },
+  {
+    id: "classic-desktop-td",
+    variant: "desktop-td",
+    engine: "defense",
+    name: "Desktop Scratching Defense",
+    genre: "Strategy",
+    classic: "Desktop Tower Defense",
+    description: "Build a maze of scratching posts across David's desk.",
+    controls:
+      "Choose a tower, then select an empty build site. Select a tower to upgrade or sell it. Send the next wave when ready.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-defense-desktop-td",
+    edition: "Desktop Tower Defense 1.5-era release",
+  },
+  {
+    id: "classic-kingdom-rush",
+    variant: "kingdom-rush",
+    engine: "defense",
+    name: "Kingdom of Paws",
+    genre: "Strategy",
+    classic: "Kingdom Rush",
+    description:
+      "Scratching posts, cat guards, and yarn mages defend the living room.",
+    controls:
+      "Choose a tower, then select an empty build site. Select a tower to upgrade or sell it. Send the next wave when ready.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-defense-kingdom-rush",
+    edition: "Original Kingdom Rush, Flash campaign",
+  },
+  {
+    id: "classic-age-of-war",
+    variant: "age-of-war",
+    engine: "war",
+    name: "Age of Cats",
+    genre: "Strategy",
+    classic: "Age of War",
+    description:
+      "Evolve from kitten toys to an advanced feline household empire.",
+    controls:
+      "Recruit cats, collect treats and choose army orders. Use each specialist and advance through the campaign.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-war-age-of-war",
+    edition: "Original five-age Flash release",
+  },
+  {
+    id: "classic-stick-war",
+    variant: "stick-war",
+    engine: "war",
+    name: "Whisker War",
+    genre: "Strategy",
+    classic: "Stick War",
+    description:
+      "Lead a cat colony, gather treats, and defend its scratching-post statue.",
+    controls:
+      "Recruit cats, collect treats and choose army orders. Use each specialist and advance through the campaign.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-war-stick-war",
+    edition: "Original Flash campaign",
+  },
+  {
+    id: "classic-gemcraft",
+    variant: "gemcraft",
+    engine: "defense",
+    name: "Yarncraft Labyrinth",
+    genre: "Strategy",
+    classic: "GemCraft",
+    description: "Combine coloured yarn gems to defend a maze of cat tunnels.",
+    controls:
+      "Choose a tower, then select an empty build site. Select a tower to upgrade or sell it. Send the next wave when ready.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-defense-gemcraft",
+    edition: "GemCraft Labyrinth",
+  },
+  {
+    id: "classic-warfare-1917",
+    variant: "warfare-1917",
+    engine: "war",
+    name: "Blanket Fort Tactics",
+    genre: "Strategy",
+    classic: "Warfare 1917",
+    description:
+      "Toy-cat squads contest blanket forts; preserve tactical systems without historical reskin claims.",
+    controls:
+      "Recruit cats, collect treats and choose army orders. Use each specialist and advance through the campaign.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-war-warfare-1917",
+    edition: "Original Flash release",
+  },
+  {
+    id: "classic-fancy-pants",
+    variant: "fancy-pants",
+    engine: "platform",
+    name: "Fancy Paws Adventures",
+    genre: "Platform",
+    classic: "Fancy Pants Adventures",
+    description:
+      "A fast, fluffy Sucuk slides through a hand-drawn house in tiny trousers.",
+    controls:
+      "Arrow keys or WASD move. Space jumps; hold for a higher jump. X acts or fires. E interacts. Use the on-screen controls on touch devices.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-platform-fancy-pants",
+    edition: "The Fancy Pants Adventure World 2",
+  },
+  {
+    id: "classic-meat-boy",
+    variant: "meat-boy",
+    engine: "platform",
+    name: "Floof Boy",
+    genre: "Platform",
+    classic: "Meat Boy",
+    description:
+      "A soft toy Sucuk climbs furniture and rescues a yarn companion.",
+    controls:
+      "Arrow keys or WASD move. Space jumps; hold for a higher jump. X acts or fires. E interacts. Use the on-screen controls on touch devices.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-platform-meat-boy",
+    edition: "2008 Flash original, not Super Meat Boy",
+  },
+  {
+    id: "classic-n",
+    variant: "n",
+    engine: "platform",
+    name: "Ninja Sucuk",
+    genre: "Platform",
+    classic: "N",
+    description:
+      "A nimble Sucuk collects treats and escapes vacuum-patrolled rooms.",
+    controls:
+      "Arrow keys or WASD move. Space jumps; hold for a higher jump. X acts or fires. E interacts. Use the on-screen controls on touch devices.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-platform-n",
+    edition: "N v2 Flash era",
+  },
+  {
+    id: "classic-fireboy-watergirl",
+    variant: "fireboy-watergirl",
+    engine: "platform",
+    name: "Sun Cat & Moon Cat",
+    genre: "Platform",
+    classic: "Fireboy and Watergirl",
+    description:
+      "Sunbeam Sucuk and Moonbeam Sucuk solve paired household puzzles.",
+    controls:
+      "Arrow keys or WASD move. Space jumps; hold for a higher jump. X acts or fires. E interacts. Use the on-screen controls on touch devices.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-platform-fireboy-watergirl",
+    edition: "The Forest Temple",
+  },
+  {
+    id: "classic-worlds-hardest-game",
+    variant: "worlds-hardest-game",
+    engine: "platform",
+    name: "The Hardest Cat Game",
+    genre: "Platform",
+    classic: "World's Hardest Game",
+    description:
+      "Guide a cat token past roaming vacuum toys and collect treats.",
+    controls:
+      "Arrow keys or WASD move. Space jumps; hold for a higher jump. X acts or fires. E interacts. Use the on-screen controls on touch devices.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-platform-worlds-hardest-game",
+    edition: "Original 30-level game",
+  },
+  {
+    id: "classic-run-3",
+    variant: "run-3",
+    engine: "platform",
+    name: "Tunnel Cat 3",
+    genre: "Platform",
+    classic: "Run 3",
+    description:
+      "Sucuk runs around the inside of a seemingly endless cardboard tunnel.",
+    controls:
+      "Arrow keys or WASD move. Space jumps; hold for a higher jump. X acts or fires. E interacts. Use the on-screen controls on touch devices.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-platform-run-3",
+    edition: "Late Flash release",
+  },
+  {
+    id: "classic-vex",
+    variant: "vex",
+    engine: "platform",
+    name: "Vexing Whiskers",
+    genre: "Platform",
+    classic: "Vex",
+    description: "An agile Sucuk clears household obstacle courses.",
+    controls:
+      "Arrow keys or WASD move. Space jumps; hold for a higher jump. X acts or fires. E interacts. Use the on-screen controls on touch devices.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-platform-vex",
+    edition: "Vex 2, a verified Flash-era release",
+  },
+  {
+    id: "classic-super-mario-63",
+    variant: "super-mario-63",
+    engine: "platform",
+    name: "Super Sucuk 63",
+    genre: "Platform",
+    classic: "Super Mario 63",
+    description: "Sucuk explores a toy castle with water-powered cat gadgets.",
+    controls:
+      "Arrow keys or WASD move. Space jumps; hold for a higher jump. X acts or fires. E interacts. Use the on-screen controls on touch devices.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-platform-super-mario-63",
+    edition: "2012 updated Flash version",
+  },
+  {
+    id: "classic-dino-run",
+    variant: "dino-run",
+    engine: "platform",
+    name: "Dino Cat Run",
+    genre: "Platform",
+    classic: "Dino Run",
+    description:
+      "Sucuk outruns a wave of noisy vacuum cleaners through the house.",
+    controls:
+      "Arrow keys or WASD move. Space jumps; hold for a higher jump. X acts or fires. E interacts. Use the on-screen controls on touch devices.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-platform-dino-run",
+    edition: "Original free Flash release",
+  },
+  {
+    id: "classic-robot-unicorn",
+    variant: "robot-unicorn",
+    engine: "platform",
+    name: "Rainbow Cat Attack",
+    genre: "Platform",
+    classic: "Robot Unicorn Attack",
+    description:
+      "A dream-world Sucuk dashes through yarn stars with original audio.",
+    controls:
+      "Arrow keys or WASD move. Space jumps; hold for a higher jump. X acts or fires. E interacts. Use the on-screen controls on touch devices.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-platform-robot-unicorn",
+    edition: "Original Adult Swim Flash release",
+  },
+  {
+    id: "classic-canabalt",
+    variant: "canabalt",
+    engine: "platform",
+    name: "Catabalt",
+    genre: "Platform",
+    classic: "Canabalt",
+    description:
+      "Sucuk races across a skyline of shelves and rooftops with original cat artwork.",
+    controls:
+      "Arrow keys or WASD move. Space jumps; hold for a higher jump. X acts or fires. E interacts. Use the on-screen controls on touch devices.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-platform-canabalt",
+    edition: "Original-style Canabalt via authorized HaxeFlixel port",
+  },
+  {
+    id: "classic-samorost",
+    variant: "samorost",
+    engine: "adventure",
+    name: "Samopaws",
+    genre: "Adventure",
+    classic: "Samorost",
+    description:
+      "Sucuk explores a miniature world built from plants, blankets and household textures.",
+    controls:
+      "Explore the scene, collect objects and choose an inventory item before interacting. Follow the clues to solve every room.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-adventure-samorost",
+    edition: "Samorost 1, original Flash release",
+  },
+  {
+    id: "classic-machinarium",
+    variant: "machinarium",
+    engine: "adventure",
+    name: "Meowchinarium",
+    genre: "Adventure",
+    classic: "Machinarium",
+    description:
+      "A mechanical toy Sucuk solves original household machinery puzzles.",
+    controls:
+      "Explore the scene, collect objects and choose an inventory item before interacting. Follow the clues to solve every room.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-adventure-machinarium",
+    edition: "2009 Flash game; public demo as initial reference",
+  },
+  {
+    id: "classic-submachine",
+    variant: "submachine",
+    engine: "adventure",
+    name: "Submeowchine",
+    genre: "Adventure",
+    classic: "Submachine",
+    description:
+      "An inquisitive Sucuk explores forgotten rooms beneath the house.",
+    controls:
+      "Explore the scene, collect objects and choose an inventory item before interacting. Follow the clues to solve every room.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-adventure-submachine",
+    edition: "Submachine 5: The Root",
+  },
+  {
+    id: "classic-crimson-room",
+    variant: "crimson-room",
+    engine: "adventure",
+    name: "The Crimson Cat Room",
+    genre: "Adventure",
+    classic: "Crimson Room",
+    description:
+      "Sucuk searches a red bedroom for the hidden route to breakfast.",
+    controls:
+      "Explore the scene, collect objects and choose an inventory item before interacting. Follow the clues to solve every room.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-adventure-crimson-room",
+    edition: "Original 2004 Flash escape room",
+  },
+  {
+    id: "classic-hapland",
+    variant: "hapland",
+    engine: "adventure",
+    name: "Pawland",
+    genre: "Adventure",
+    classic: "Hapland",
+    description:
+      "A tiny cat household comes alive through precisely ordered paw interactions.",
+    controls:
+      "Explore the scene, collect objects and choose an inventory item before interacting. Follow the clues to solve every room.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-adventure-hapland",
+    edition: "Original Hapland",
+  },
+  {
+    id: "classic-grow",
+    variant: "grow",
+    engine: "adventure",
+    name: "GROW a Cat Garden",
+    genre: "Adventure",
+    classic: "Grow (Eyezmaze)",
+    description:
+      "Grow Sucuk's miniature home by choosing the order of toys, food and furniture.",
+    controls:
+      "Explore the scene, collect objects and choose an inventory item before interacting. Follow the clues to solve every room.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-adventure-grow",
+    edition: "GROW RPG",
+  },
+  {
+    id: "classic-portal-flash",
+    variant: "portal-flash",
+    engine: "platform",
+    name: "Cat Flap: Portal Puzzles",
+    genre: "Platform",
+    classic: "Portal: The Flash Version",
+    description: "Sucuk links two cat flaps through a household test chamber.",
+    controls:
+      "Arrow keys or WASD move. Space jumps; hold for a higher jump. X acts or fires. E interacts. Use the on-screen controls on touch devices.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-platform-portal-flash",
+    edition: "Original 40-level Flash version",
+  },
+  {
+    id: "classic-achievement-unlocked",
+    variant: "achievement-unlocked",
+    engine: "platform",
+    name: "Achievement Unpawed",
+    genre: "Platform",
+    classic: "Achievement Unlocked",
+    description:
+      "Earn cat achievements for sitting, falling, exploring and interrupting everything.",
+    controls:
+      "Arrow keys or WASD move. Space jumps; hold for a higher jump. X acts or fires. E interacts. Use the on-screen controls on touch devices.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-platform-achievement-unlocked",
+    edition: "Original Flash release",
+  },
+  {
+    id: "classic-epic-battle-fantasy",
+    variant: "epic-battle-fantasy",
+    engine: "rpg",
+    name: "Epic Cat Fantasy",
+    genre: "RPG",
+    classic: "Epic Battle Fantasy",
+    description:
+      "A cat party adventures through household kingdoms with yarn-themed equipment.",
+    controls:
+      "Choose an ability and target. Manage focus, cooldowns, equipment and the different cats in your party.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-rpg-epic-battle-fantasy",
+    edition: "Epic Battle Fantasy 4, free Flash build",
+  },
+  {
+    id: "classic-sonny",
+    variant: "sonny",
+    engine: "rpg",
+    name: "Moonlit Sonnycat",
+    genre: "RPG",
+    classic: "Sonny",
+    description:
+      "A mysterious moonlit Sucuk leads a party through a tactical cat adventure.",
+    controls:
+      "Choose an ability and target. Manage focus, cooldowns, equipment and the different cats in your party.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-rpg-sonny",
+    edition: "Sonny 2",
+  },
+  {
+    id: "classic-stick-rpg",
+    variant: "stick-rpg",
+    engine: "life",
+    name: "Sucuk Life RPG",
+    genre: "RPG",
+    classic: "Stick RPG",
+    description:
+      "Live a cat's day: nap, explore, earn treats and improve the basket.",
+    controls:
+      "Follow the activity controls. Earn treats, buy upgrades and complete the goal for each activity.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-life-stick-rpg",
+    edition: "Stick RPG Complete",
+  },
+  {
+    id: "classic-learn-to-fly",
+    variant: "learn-to-fly",
+    engine: "life",
+    name: "Learn to Floof",
+    genre: "RPG",
+    classic: "Learn to Fly",
+    description:
+      "Build increasingly unlikely flying contraptions for a determined Sucuk.",
+    controls:
+      "Follow the activity controls. Earn treats, buy upgrades and complete the goal for each activity.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-life-learn-to-fly",
+    edition: "Learn to Fly 2",
+  },
+  {
+    id: "classic-motherload",
+    variant: "motherload",
+    engine: "life",
+    name: "Motherlode of Treats",
+    genre: "RPG",
+    classic: "Motherload",
+    description: "Sucuk pilots a digging basket in search of buried treats.",
+    controls:
+      "Follow the activity controls. Earn treats, buy upgrades and complete the goal for each activity.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-life-motherload",
+    edition: "Original free Flash version",
+  },
+  {
+    id: "classic-duck-life",
+    variant: "duck-life",
+    engine: "life",
+    name: "Kitten Life Academy",
+    genre: "RPG",
+    classic: "Duck Life",
+    description:
+      "Train a team of kittens in running, climbing, swimming and flying toys.",
+    controls:
+      "Follow the activity controls. Earn treats, buy upgrades and complete the goal for each activity.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-life-duck-life",
+    edition: "Duck Life 4",
+  },
+  {
+    id: "classic-binding-of-isaac",
+    variant: "binding-of-isaac",
+    engine: "shooter",
+    name: "The Binding of Sucuk",
+    genre: "Action",
+    classic: "The Binding of Isaac",
+    description: "Sucuk explores a toy-filled basement and fires yarn tears.",
+    controls:
+      "Move with arrows or WASD. Aim with the pointer; hold Space or the Paw button to fire. Dodge enemies and collect supplies.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-shooter-binding-of-isaac",
+    edition: "Original 2011 Flash game; public demo reference",
+  },
+  {
+    id: "classic-madness-interactive",
+    variant: "madness-interactive",
+    engine: "platform",
+    name: "Madness: Yarnteractive",
+    genre: "Platform",
+    classic: "Madness Interactive",
+    description:
+      "Toy Sucuk battles cardboard opponents using feather blasters.",
+    controls:
+      "Arrow keys or WASD move. Space jumps; hold for a higher jump. X acts or fires. E interacts. Use the on-screen controls on touch devices.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-platform-madness-interactive",
+    edition: "Original 2003 Flash release",
+  },
+  {
+    id: "classic-thing-thing",
+    variant: "thing-thing",
+    engine: "platform",
+    name: "Floof-Thing Arena",
+    genre: "Platform",
+    classic: "Thing-Thing",
+    description: "A customisable toy-cat arena fighter with stuffing effects.",
+    controls:
+      "Arrow keys or WASD move. Space jumps; hold for a higher jump. X acts or fires. E interacts. Use the on-screen controls on touch devices.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-platform-thing-thing",
+    edition: "Thing-Thing Arena 3",
+  },
+  {
+    id: "classic-boxhead",
+    variant: "boxhead",
+    engine: "shooter",
+    name: "Boxcat 2Play",
+    genre: "Action",
+    classic: "Boxhead",
+    description: "Box-shaped Sucuk and a friend defend cardboard arenas.",
+    controls:
+      "Move with arrows or WASD. Aim with the pointer; hold Space or the Paw button to fire. Dodge enemies and collect supplies.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-shooter-boxhead",
+    edition: "Boxhead 2Play",
+  },
+  {
+    id: "classic-strike-force-heroes",
+    variant: "strike-force-heroes",
+    engine: "platform",
+    name: "Strike Force Kittens",
+    genre: "Platform",
+    classic: "Strike Force Heroes",
+    description: "A squad of specialised toy cats protects the house.",
+    controls:
+      "Arrow keys or WASD move. Space jumps; hold for a higher jump. X acts or fires. E interacts. Use the on-screen controls on touch devices.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-platform-strike-force-heroes",
+    edition: "Strike Force Heroes 2",
+  },
+  {
+    id: "classic-last-stand",
+    variant: "last-stand",
+    engine: "shooter",
+    name: "The Last Nap",
+    genre: "Action",
+    classic: "The Last Stand",
+    description:
+      "Protect a blanket fort at night and scavenge toys during the day.",
+    controls:
+      "Move with arrows or WASD. Aim with the pointer; hold Space or the Paw button to fire. Dodge enemies and collect supplies.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-shooter-last-stand",
+    edition: "The Last Stand 2",
+  },
+  {
+    id: "classic-sas-zombie-assault",
+    variant: "sas-zombie-assault",
+    engine: "shooter",
+    name: "SAS: Sucuk Assault Squad",
+    genre: "Action",
+    classic: "SAS: Zombie Assault",
+    description:
+      "A cat squad holds household rooms against malfunctioning toys.",
+    controls:
+      "Move with arrows or WASD. Aim with the pointer; hold Space or the Paw button to fire. Dodge enemies and collect supplies.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-shooter-sas-zombie-assault",
+    edition: "SAS: Zombie Assault 3",
+  },
+  {
+    id: "classic-raft-wars",
+    variant: "raft-wars",
+    engine: "artillery",
+    name: "Basket Raft Wars",
+    genre: "Action",
+    classic: "Raft Wars",
+    description: "Sucuk defends a floating basket with bouncing yarn shots.",
+    controls:
+      "Drag on the field to aim, or adjust angle and power below. Release or press Fire. Watch wind, gravity and the turn order.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-artillery-raft-wars",
+    edition: "Original Flash release",
+  },
+  {
+    id: "classic-bowman",
+    variant: "bowman",
+    engine: "artillery",
+    name: "Bowcat",
+    genre: "Action",
+    classic: "Bowman",
+    description: "Two cats lob feather arrows across the garden.",
+    controls:
+      "Drag on the field to aim, or adjust angle and power below. Release or press Fire. Watch wind, gravity and the turn order.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-artillery-bowman",
+    edition: "Classic Flash Bowman",
+  },
+  {
+    id: "classic-territory-war",
+    variant: "territory-war",
+    engine: "artillery",
+    name: "Territory Paw",
+    genre: "Action",
+    classic: "Territory War",
+    description: "Cat teams contest furniture islands with soft toy weapons.",
+    controls:
+      "Drag on the field to aim, or adjust angle and power below. Release or press Fire. Watch wind, gravity and the turn order.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-artillery-territory-war",
+    edition: "Original Flash mission/custom-battle game",
+  },
+  {
+    id: "classic-crush-castle",
+    variant: "crush-castle",
+    engine: "artillery",
+    name: "Crush the Cardboard Castle",
+    genre: "Action",
+    classic: "Crush the Castle",
+    description: "Launch yarn from a catapult at elaborate cardboard towers.",
+    controls:
+      "Drag on the field to aim, or adjust angle and power below. Release or press Fire. Watch wind, gravity and the turn order.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-artillery-crush-castle",
+    edition: "Crush the Castle 2",
+  },
+  {
+    id: "classic-qwop",
+    variant: "qwop",
+    engine: "physics",
+    name: "PAWS",
+    genre: "Physics",
+    classic: "QWOP",
+    description:
+      "Four deliberately awkward paw controls try to move Sucuk down a hallway.",
+    controls:
+      "Use the labelled controls below the field. Balance or play with Sucuk using the game’s physics rules.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-physics-qwop",
+    edition:
+      "Original Flash QWOP; current creator web port is a secondary reference",
+  },
+  {
+    id: "classic-interactive-buddy",
+    variant: "interactive-buddy",
+    engine: "physics",
+    name: "Interactive Sucuk",
+    genre: "Physics",
+    classic: "Interactive Buddy",
+    description:
+      "Play gently with a floppy toy Sucuk using yarn, treats and cushions.",
+    controls:
+      "Use the labelled controls below the field. Balance or play with Sucuk using the game’s physics rules.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-physics-interactive-buddy",
+    edition: "Interactive Buddy v1.01",
+  },
+  {
+    id: "classic-pandemic-2",
+    variant: "pandemic-2",
+    engine: "simulation",
+    name: "Cat Craze II",
+    genre: "Strategy",
+    classic: "Pandemic 2",
+    description:
+      "Spread a harmless worldwide obsession with Sucuk through toy deliveries and cat videos.",
+    controls:
+      "Use the management panel to run the simulation. Balance upgrades, timing and resources to meet the goal.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-simulation-pandemic-2",
+    edition: "Pandemic II Flash release",
+  },
+  {
+    id: "classic-papas-pizzeria",
+    variant: "papas-pizzeria",
+    engine: "simulation",
+    name: "Sucuk’s Pizzeria",
+    genre: "Strategy",
+    classic: "Papa's Pizzeria",
+    description:
+      "Run Sucuk's snack kitchen, preparing cat-friendly pretend pizzas.",
+    controls:
+      "Use the management panel to run the simulation. Balance upgrades, timing and resources to meet the goal.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-simulation-papas-pizzeria",
+    edition: "Original Flash Papa's Pizzeria v2 binary",
+  },
+  {
+    id: "classic-transformice",
+    variant: "transformice",
+    engine: "social",
+    name: "Transforcats",
+    genre: "Social",
+    classic: "Transformice",
+    description:
+      "Cats cooperate across physics rooms to bring treats back to the basket.",
+    controls:
+      "Move with arrows or WASD and jump with Space. Invite a second cat on the same device using IJKL and Enter. Follow the room objective.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-social-transformice",
+    edition:
+      "Established classic Flash room/shaman ruleset; pin client version before work",
+  },
+  {
+    id: "classic-platform-racing-2",
+    variant: "platform-racing-2",
+    engine: "social",
+    name: "Platform Purracing 2",
+    genre: "Social",
+    classic: "Platform Racing 2",
+    description:
+      "Sucuk races Luna through household obstacle courses with a sprint hat and local two-cat controls.",
+    controls:
+      "Move with arrows or WASD and jump with Space. Invite a second cat on the same device using IJKL and Enter. Follow the room objective.",
+    goal: "Complete the cat campaign and set your best score.",
+    art: "classic-social-platform-racing-2",
+    edition:
+      "Classic Flash gameplay; creator's Haxe/OpenFL migration as source reference",
+  },
+] as const;
+
+export type ClassicGame = (typeof classicGames)[number];
+export type ClassicId = ClassicGame["id"];
+export type ClassicVariant = ClassicGame["variant"];
+export type ClassicEngine = ClassicGame["engine"];
+export const classicById = new Map<string, ClassicGame>(
+  classicGames.map((game) => [game.id, game]),
+);

@@ -18,8 +18,9 @@
       "sucuk": "A stranded Sucuk fights rogue vacuum cleaners with yarn projectiles.",
       "sourceStatus": "Original author release located; local page download returned HTTP 403.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       }
     },
     {
@@ -62,8 +63,9 @@
       "sucuk": "Original cat riddles, hidden paw interactions, and deliberately misleading answers.",
       "sourceStatus": "Author release located; no reusable source license located in this audit.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       }
     },
     {
@@ -82,8 +84,10 @@
       "sucuk": "A shared cat neighbourhood with baskets, outfits, and household minigames.",
       "sourceStatus": "Original service closed. A client archive alone is insufficient. Snapshot, server implementation, persistence and chat moderation remain required.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation.",
+        "network": "Local play only; no original accounts, rooms or game servers."
       }
     },
     {
@@ -102,8 +106,9 @@
       "sucuk": "A floppy toy-cat rider on household vehicles, with stuffing instead of gore.",
       "sourceStatus": "Official full-game host located. No reusable original source located; user-level service is a separate dependency.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       }
     },
     {
@@ -123,8 +128,9 @@
       "sucuk": "Cat towers bat balloon toys with feathers, yarn and laser pointers.",
       "sourceStatus": "Developer-uploaded release located. Full campaign tables, tower data, economy, map data and network dependencies require reference inspection.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       }
     },
     {
@@ -144,8 +150,9 @@
       "sucuk": "Build a maze of scratching posts across David's desk.",
       "sourceStatus": "Publisher release and an embedded SWF URL located; binary verification recorded separately.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       },
       "referenceBuild": {
         "url": "https://chat.kongregate.com/game_files/0000/0492/desktop-tower-defense.swf",
@@ -183,8 +190,9 @@
       "sucuk": "Scratching posts, cat guards, and yarn mages defend the living room.",
       "sourceStatus": "Official publisher release located. Premium content must remain distinct from the free campaign.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       },
       "referenceBuild": {
         "url": "https://cache.armorgames.com/files/games/kingdom-rush-12141.swf?v=1379178890",
@@ -221,8 +229,9 @@
       "sucuk": "Evolve from kitten toys to an advanced feline household empire.",
       "sourceStatus": "Official publisher release located; source not located.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       },
       "referenceBuild": {
         "url": "https://cache.armorgames.com/files/games/age-of-war-616.swf?v=1373587521",
@@ -260,8 +269,9 @@
       "sucuk": "Lead a cat colony, gather treats, and defend its scratching-post statue.",
       "sourceStatus": "Original publisher page embeds stickwar_08.swf; binary verification recorded separately.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       },
       "referenceBuild": {
         "url": "https://farm.stickpage.com/stickwar_08.swf",
@@ -299,8 +309,9 @@
       "sucuk": "Combine coloured yarn gems to defend a maze of cat tunnels.",
       "sourceStatus": "Publisher release and official strategy guide located. Paid Sorcerer's Package is distinct from the free build.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       },
       "referenceBuild": {
         "url": "https://cache.armorgames.com/files/games/gemcraft-labyrinth-10317.swf?v=1373587524",
@@ -338,8 +349,9 @@
       "sucuk": "Toy-cat squads contest blanket forts; preserve tactical systems without historical reskin claims.",
       "sourceStatus": "Official publisher release located; source not located.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       },
       "referenceBuild": {
         "url": "https://cache.armorgames.com/files/games/warfare-1917-2267.swf?v=1373587520",
@@ -377,8 +389,9 @@
       "sucuk": "A fast, fluffy Sucuk slides through a hand-drawn house in tiny trousers.",
       "sourceStatus": "Official publisher release located; source not located.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       },
       "referenceBuild": {
         "url": "https://cache.armorgames.com/files/games/the-fancy-pants-adve-553.swf?v=1373587520",
@@ -416,8 +429,9 @@
       "sucuk": "A soft toy Sucuk climbs furniture and rescues a yarn companion.",
       "sourceStatus": "Original author release located; local download returned HTTP 403.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       }
     },
     {
@@ -441,8 +455,9 @@
         "https://www.metanetsoftware.com/2016/n-tutorial-b-broad-phase-collision"
       ],
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       }
     },
     {
@@ -461,8 +476,9 @@
       "sucuk": "Sunbeam Sucuk and Moonbeam Sucuk solve paired household puzzles.",
       "sourceStatus": "Original publisher release located; source not located.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       },
       "referenceBuild": {
         "url": "https://cache.armorgames.com/files/games/the-forest-temple-4900.swf?v=1373587522",
@@ -500,8 +516,9 @@
       "sucuk": "Guide a cat token past roaming vacuum toys and collect treats.",
       "sourceStatus": "Official publisher release located; exact movement schedules and all maps require extraction or measurement.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       },
       "referenceBuild": {
         "url": "https://cache.armorgames.com/files/games/the-worlds-hardest-g-1043.swf?v=1373587520",
@@ -539,8 +556,9 @@
       "sucuk": "Sucuk runs around the inside of a seemingly endless cardboard tunnel.",
       "sourceStatus": "Developer-uploaded release located. Geometry, camera and save structure are required for fidelity.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       }
     },
     {
@@ -560,8 +578,9 @@
       "sucuk": "An agile Sucuk clears household obstacle courses.",
       "sourceStatus": "Publisher Flash release located; later HTML5 Vex editions are not substituted silently.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       },
       "referenceBuild": {
         "url": "https://cache.armorgames.com/files/games/vex-2-15479.swf?v=1379353152",
@@ -599,8 +618,9 @@
       "sucuk": "Sucuk explores a toy castle with water-powered cat gadgets.",
       "sourceStatus": "Original release URL located; access/removal status and a verified reference binary remain unresolved.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       }
     },
     {
@@ -620,8 +640,9 @@
       "sucuk": "Sucuk outruns a wave of noisy vacuum cleaners through the house.",
       "sourceStatus": "Creator's site links the free version. Original Flash build and multiplayer dependencies require inspection.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       }
     },
     {
@@ -641,8 +662,9 @@
       "sucuk": "A dream-world Sucuk dashes through yarn stars with original audio.",
       "sourceStatus": "Publisher catalogue entry located. Original binary and audio reuse permission are not established.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       }
     },
     {
@@ -666,8 +688,9 @@
         "https://github.com/ninjamuffin99/canabalt-assets/blob/main/LICENSE.md"
       ],
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       }
     },
     {
@@ -685,8 +708,9 @@
       "sucuk": "Sucuk explores a miniature world built from plants, blankets and household textures.",
       "sourceStatus": "Creator release page located. Remaster must be kept distinct from original Flash content.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       }
     },
     {
@@ -705,8 +729,9 @@
       "sucuk": "A mechanical toy Sucuk solves original household machinery puzzles.",
       "sourceStatus": "Commercial full game; public demo is not equivalent to its complete content. No reusable source located.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       }
     },
     {
@@ -725,8 +750,9 @@
       "sucuk": "An inquisitive Sucuk explores forgotten rooms beneath the house.",
       "sourceStatus": "Creator walkthrough and release archive located. Original build still needs verification.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       }
     },
     {
@@ -746,8 +772,9 @@
       "sucuk": "Sucuk searches a red bedroom for the hidden route to breakfast.",
       "sourceStatus": "Original domain fails DNS in this audit. Preserved build and external code dependencies remain unresolved.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       }
     },
     {
@@ -766,8 +793,9 @@
       "sucuk": "A tiny cat household comes alive through precisely ordered paw interactions.",
       "sourceStatus": "Creator-hosted original SWF located; download and metadata inspection recorded separately.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       },
       "referenceBuild": {
         "url": "https://foon.uk/swf/hapland.swf",
@@ -804,8 +832,9 @@
       "sucuk": "Grow Sucuk's miniature home by choosing the order of toys, food and furniture.",
       "sourceStatus": "Creator-hosted grow-rpg.swf located; download verification recorded separately.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       },
       "referenceBuild": {
         "url": "https://www.eyezmaze.com/game/grow-rpg.swf",
@@ -843,8 +872,9 @@
       "sucuk": "Sucuk links two cat flaps through a household test chamber.",
       "sourceStatus": "Creator site confirms full 40-level game. Play-page download returned HTTP 403; no source license located.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       }
     },
     {
@@ -863,8 +893,9 @@
       "sucuk": "Earn cat achievements for sitting, falling, exploring and interrupting everything.",
       "sourceStatus": "Publisher release located. The complete trigger table is required for a faithful recreation.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       },
       "referenceBuild": {
         "url": "https://cache.armorgames.com/files/games/achievement-unlocked-2893.swf?v=1373587520",
@@ -902,8 +933,9 @@
       "sucuk": "A cat party adventures through household kingdoms with yarn-themed equipment.",
       "sourceStatus": "Author release located. Full item, skill, enemy and campaign data are substantial separate work.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       }
     },
     {
@@ -923,8 +955,9 @@
       "sucuk": "A mysterious moonlit Sucuk leads a party through a tactical cat adventure.",
       "sourceStatus": "Publisher release located; no reusable source located.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       },
       "referenceBuild": {
         "url": "https://cache.armorgames.com/files/games/sonny-2-2900.swf?v=1373587520",
@@ -962,8 +995,9 @@
       "sucuk": "Live a cat's day: nap, explore, earn treats and improve the basket.",
       "sourceStatus": "Creator catalogue located. Exact original free build URL requires verification; paid sequel is not substituted.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       }
     },
     {
@@ -983,8 +1017,9 @@
       "sucuk": "Build increasingly unlikely flying contraptions for a determined Sucuk.",
       "sourceStatus": "Developer-uploaded release located; no reusable source located.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       }
     },
     {
@@ -1004,8 +1039,9 @@
       "sucuk": "Sucuk pilots a digging basket in search of buried treats.",
       "sourceStatus": "Creator catalogue located; direct game-path request failed certificate verification. No security checks bypassed.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       }
     },
     {
@@ -1025,8 +1061,9 @@
       "sucuk": "Train a team of kittens in running, climbing, swimming and flying toys.",
       "sourceStatus": "Developer-uploaded release located. Training games and race simulation must both be preserved.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       }
     },
     {
@@ -1046,8 +1083,9 @@
       "sucuk": "Sucuk explores a toy-filled basement and fires yarn tears.",
       "sourceStatus": "Author-published demo covers two of eight levels. It is not the complete commercial 2011 game.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       }
     },
     {
@@ -1067,8 +1105,9 @@
       "sucuk": "Toy Sucuk battles cardboard opponents using feather blasters.",
       "sourceStatus": "Original author release links flecko.net downloads. Historical source-page lead found; license and files not yet verified.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       }
     },
     {
@@ -1087,8 +1126,9 @@
       "sucuk": "A customisable toy-cat arena fighter with stuffing effects.",
       "sourceStatus": "Publisher's game guide located. Exact release binary still requires verification.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       }
     },
     {
@@ -1108,8 +1148,9 @@
       "sucuk": "Box-shaped Sucuk and a friend defend cardboard arenas.",
       "sourceStatus": "Publisher release located; local multiplayer is part of the fidelity target.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       },
       "referenceBuild": {
         "url": "https://cache.armorgames.com/files/games/boxhead-2play-158.swf?v=1373587520",
@@ -1147,8 +1188,9 @@
       "sucuk": "A squad of specialised toy cats protects the house.",
       "sourceStatus": "Official publisher release and release announcement located; source not located.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       },
       "referenceBuild": {
         "url": "https://cache.armorgames.com/files/games/strike-force-heroes--14775.swf?v=1791566236",
@@ -1186,8 +1228,9 @@
       "sucuk": "Protect a blanket fort at night and scavenge toys during the day.",
       "sourceStatus": "Publisher release located; campaign state and search tables require reference inspection.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       },
       "referenceBuild": {
         "url": "https://cache.armorgames.com/files/games/the-last-stand-2-1443.swf?v=1373587520",
@@ -1225,8 +1268,10 @@
       "sucuk": "A cat squad holds household rooms against malfunctioning toys.",
       "sourceStatus": "Developer-uploaded client release located. Original network services need separate recovery/reimplementation.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation.",
+        "network": "Local play only; no original accounts, rooms or game servers."
       }
     },
     {
@@ -1245,8 +1290,9 @@
       "sucuk": "Sucuk defends a floating basket with bouncing yarn shots.",
       "sourceStatus": "Original publisher upload located; source not located.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       }
     },
     {
@@ -1265,8 +1311,9 @@
       "sucuk": "Two cats lob feather arrows across the garden.",
       "sourceStatus": "Original publisher explicitly links a downloadable SWF; verification recorded separately.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       },
       "referenceBuild": {
         "url": "https://farm.stickpage.com/bowmangame.swf",
@@ -1304,8 +1351,9 @@
       "sucuk": "Cat teams contest furniture islands with soft toy weapons.",
       "sourceStatus": "Publisher release located; no reusable source located.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       },
       "referenceBuild": {
         "url": "https://cache.armorgames.com/files/games/territory-war-279.swf?v=1373587520",
@@ -1343,8 +1391,9 @@
       "sucuk": "Launch yarn from a catapult at elaborate cardboard towers.",
       "sourceStatus": "Official publisher release located; physics constants and structure data require measurement.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       },
       "referenceBuild": {
         "url": "https://cache.armorgames.com/files/games/crush-the-castle-2-6137.swf?v=1373587523",
@@ -1381,8 +1430,9 @@
       "sucuk": "Four deliberately awkward paw controls try to move Sucuk down a hallway.",
       "sourceStatus": "Creator page now loads QWOP.min.js. That current port must not be mislabeled an original Flash SWF.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       }
     },
     {
@@ -1402,8 +1452,9 @@
       "sucuk": "Play gently with a floppy toy Sucuk using yarn, treats and cushions.",
       "sourceStatus": "Original author release located; source not located.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       }
     },
     {
@@ -1423,8 +1474,9 @@
       "sucuk": "Spread a harmless worldwide obsession with Sucuk through toy deliveries and cat videos.",
       "sourceStatus": "Original author release located. A faithful system needs the region graph and response rules, not only a map.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       }
     },
     {
@@ -1444,8 +1496,9 @@
       "sucuk": "Run Sucuk's snack kitchen, preparing cat-friendly pretend pizzas.",
       "sourceStatus": "Creator-hosted papaspizzeria_v2.swf located; download verification recorded separately.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation."
       },
       "referenceBuild": {
         "url": "https://i.flipline.com/gamefiles/papaspizzeria/papaspizzeria_v2.swf",
@@ -1483,8 +1536,10 @@
       "sucuk": "Cats cooperate across physics rooms to bring treats back to the basket.",
       "sourceStatus": "Official distributions identified. Full recreation needs a separately hosted authoritative room server and persistence; no original reusable server source verified.",
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation.",
+        "network": "Local play only; no original accounts, rooms or game servers."
       }
     },
     {
@@ -1508,8 +1563,10 @@
         "https://github.com/jacob-grahn/platform-racing-2-server"
       ],
       "implementation": {
-        "status": "reference-research",
-        "exactParityVerified": false
+        "status": "playable-modern-cat-adaptation",
+        "exactParityVerified": false,
+        "scope": "Original cat adaptation with condensed content and shared genre systems; not a complete historical recreation.",
+        "network": "Local play only; no original accounts, rooms or game servers."
       }
     }
   ]

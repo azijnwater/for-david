@@ -1,6 +1,7 @@
 import { SucukMark } from "@/components/sucuk-mark";
 
 export function GameArt({ art }: { art: string }) {
+  if (art.startsWith("classic-")) return <ClassicArt art={art} />;
   return (
     <div className={`game-art art-${art}`} aria-hidden="true">
       <svg viewBox="0 0 320 170" focusable="false">
@@ -281,6 +282,97 @@ export function GameArt({ art }: { art: string }) {
       {["yarn", "feather", "fly", "run", "sofa", "sled"].includes(art) && (
         <SucukMark className={`art-cat cat-${art}`} />
       )}
+    </div>
+  );
+}
+
+function ClassicArt({ art }: { art: string }) {
+  const engine = art.split("-")[1],
+    seed = [...art].reduce((sum, c) => sum + c.charCodeAt(0), 0),
+    colors = ["#8f9bb9", "#ffb21f", "#f9dde8", "#65a5bd"];
+  return (
+    <div className={`game-art art-${engine}`} aria-hidden="true">
+      <svg viewBox="0 0 320 170" focusable="false">
+        <rect
+          width="320"
+          height="170"
+          fill={seed % 2 ? "#fff8f3" : "#e5e8f2"}
+        />
+        {["defense", "war"].includes(engine) ? (
+          <>
+            <path
+              d="M0 100H80V50H160V125H240V75H320"
+              fill="none"
+              stroke="#c9d0e5"
+              strokeWidth="24"
+            />
+            {[45, 120, 210, 275].map((x, n) => (
+              <g key={x}>
+                <rect
+                  x={x - 14}
+                  y={35 + (n % 2) * 65}
+                  width="28"
+                  height="35"
+                  rx="7"
+                  fill={colors[n]}
+                />
+                <circle cx={x} cy={29 + (n % 2) * 65} r="8" fill="#25235e" />
+              </g>
+            ))}
+          </>
+        ) : ["adventure", "rpg", "quiz", "simulation"].includes(engine) ? (
+          <>
+            <rect
+              x="42"
+              y="28"
+              width="100"
+              height="100"
+              rx="12"
+              fill="#f9dde8"
+            />
+            <rect
+              x="180"
+              y="48"
+              width="95"
+              height="95"
+              rx="10"
+              fill="#8f9bb9"
+            />
+            <circle cx="210" cy="78" r="19" fill="#ffb21f" />
+            <path
+              d="M160 20v135m-30-30h120"
+              stroke="#25235e"
+              strokeDasharray="5 7"
+              fill="none"
+            />
+          </>
+        ) : (
+          <>
+            <path
+              d={`M0 140H80V${100 + (seed % 30)}H150V140H220V90H320`}
+              fill="none"
+              stroke="#8f9bb9"
+              strokeWidth="18"
+            />
+            <path
+              d="M75 65q60-80 120 15"
+              fill="none"
+              stroke="#25235e"
+              strokeDasharray="5 6"
+            />
+            {[40, 160, 275].map((x, n) => (
+              <circle
+                key={x}
+                cx={x}
+                cy={40 + (n % 2) * 45}
+                r="8"
+                fill="#ffb21f"
+              />
+            ))}
+          </>
+        )}
+      </svg>
+      <SucukMark className="art-cat" />
     </div>
   );
 }

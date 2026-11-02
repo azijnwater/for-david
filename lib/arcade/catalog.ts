@@ -1,4 +1,6 @@
-export const games = [
+import { classicGames } from "./classic-catalog";
+
+const originalGames = [
   {
     id: "line-rider",
     name: "Cushion Rider",
@@ -147,6 +149,20 @@ export const games = [
     art: "lights",
   },
 ] as const;
+
+export const games = [
+  originalGames[0],
+  ...classicGames,
+  ...originalGames.slice(1),
+] as const;
+export function gameSlug(game: { name: string }) {
+  return game.name
+    .normalize("NFKD")
+    .replace(/[’']/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
 
 export type GameId = (typeof games)[number]["id"];
 export type Game = (typeof games)[number];

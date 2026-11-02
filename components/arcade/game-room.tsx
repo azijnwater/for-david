@@ -6,11 +6,16 @@ import dynamic from "next/dynamic";
 import { ActionGame } from "./action-game";
 import { PuzzleGame } from "./puzzle-game";
 import { saveRecord, type ActionId, type Game } from "@/lib/arcade/catalog";
+import { classicById } from "@/lib/arcade/classic-catalog";
 
 type Entry = { id: string; name: string; score: number; date: string };
 const LineRiderGame = dynamic(
   () => import("./line-rider-game").then((module) => module.LineRiderGame),
   { ssr: false, loading: () => <p role="status">Opening the track editor…</p> },
+);
+const ModernGame = dynamic(
+  () => import("./classics/modern-game").then((module) => module.ModernGame),
+  { ssr: false, loading: () => <p role="status">Getting the cats ready…</p> },
 );
 export function GameRoom({ game }: { game: Game }) {
   return game.id === "line-rider" ? (
@@ -71,12 +76,15 @@ function ScoredGameRoom({ game }: { game: Game }) {
     saveRecord(game.id, score);
   }
   const isPuzzle = ["memory", "merge", "lights", "whack"].includes(game.id);
+  const classic = classicById.get(game.id);
 
   return (
     <div className="game-room">
       <p className="game-instructions">{game.controls}</p>
       <p className="game-goal">{game.goal}</p>
-      {isPuzzle ? (
+      {classic ? (
+        <ModernGame game={classic} onStart={start} onFinish={finish} />
+      ) : isPuzzle ? (
         <PuzzleGame id={game.id} onStart={start} onFinish={finish} />
       ) : (
         <ActionGame
