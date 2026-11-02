@@ -6,6 +6,7 @@ import { SucukProfile } from "@/components/sucuk-profile";
 import { VisitPlanner } from "@/components/visit-planner";
 import { SucukJournal } from "@/components/sucuk-journal";
 import { BirthdayProvider } from "@/components/birthday-provider";
+import { Arcade } from "@/components/arcade/arcade";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <About />
         <SucukProfile />
         <SucukJournal />
+        <Arcade />
         <VisitPlanner />
         <RelatedSite />
       </main>

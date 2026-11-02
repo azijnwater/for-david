@@ -20,6 +20,7 @@ export function Navigation() {
             <a href="#life" className="nav-link">Life</a>
             <a href="#journal" className="nav-link">Journal</a>
             <a href="#visit" className="nav-link">Visit</a>
+            <a href="#minigames" className="nav-link">Play</a>
             <a href="https://david.party" target="_blank" rel="noreferrer" className="nav-link hidden gap-1 md:inline-flex">
               Main site <ArrowUpRight aria-hidden="true" size={15} />
               <span className="sr-only">(opens in a new tab)</span>
