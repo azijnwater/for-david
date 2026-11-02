@@ -5,10 +5,11 @@ import { RelatedSite } from "@/components/related-site";
 import { SucukProfile } from "@/components/sucuk-profile";
 import { VisitPlanner } from "@/components/visit-planner";
 import { SucukJournal } from "@/components/sucuk-journal";
+import { BirthdayProvider } from "@/components/birthday-provider";
 
 export default function Home() {
   return (
-    <div id="top">
+    <BirthdayProvider><div id="top">
       <a className="skip-link" href="#main-content">Skip to content</a>
       <main id="main-content">
         <PhotoArchive />
@@ -19,6 +20,6 @@ export default function Home() {
         <RelatedSite />
       </main>
       <Footer />
-    </div>
+    </div></BirthdayProvider>
   );
 }

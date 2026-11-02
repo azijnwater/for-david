@@ -1,3 +1,4 @@
+import { BirthdayCopy } from "@/components/birthday-provider";
 import { ArrowUpRight } from "lucide-react";
 
 export function RelatedSite() {
@@ -11,7 +12,7 @@ export function RelatedSite() {
           id="related-site-heading"
           className="font-mono text-[10px] uppercase tracking-[0.2em] text-foreground/70"
         >
-          Main site
+          <BirthdayCopy birthday="From Sucuk’s household, with love">Main site</BirthdayCopy>
         </h2>
         <a
           href="https://david.party"

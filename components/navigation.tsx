@@ -1,3 +1,4 @@
+import { BirthdayCopy } from "@/components/birthday-provider";
 import { ThemeToggle } from "@/components/theme-toggle";
 
 export function Navigation() {
@@ -12,7 +13,7 @@ export function Navigation() {
           <span aria-hidden="true" className="cat-mark"><span /><span /><b>•</b></span>
           <span className="text-sm font-semibold tracking-[0.2em]">SUCUK</span>
           <span className="hidden font-mono text-[9px] uppercase tracking-[0.24em] text-foreground/50 transition-colors group-hover:text-foreground sm:inline">
-            Photo archive
+            <BirthdayCopy birthday="Birthday edition / 02">Photo archive</BirthdayCopy>
           </span>
         </a>
         <div className="flex items-center gap-1 sm:gap-3">

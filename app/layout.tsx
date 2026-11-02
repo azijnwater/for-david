@@ -17,14 +17,14 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://buurtvader.vercel.app"),
   alternates: { canonical: "/" },
-  title: "Sucuk — Small cat, big life",
+  title: "Sucuk turns two — The birthday edition",
   description:
-    "A drifting photo archive of one small cat's ordinary days, soft landings, and favorite places.",
+    "Celebrating Sucuk’s second birthday: two years of little adventures, serious naps, and favorite moments. Explore the photo archive and join the birthday edition.",
   openGraph: {
     url: "/",
     siteName: "Sucuk Photo Archive",
-    title: "Sucuk — Small cat, big life",
-    description: "A small life, closely observed.",
+    title: "Sucuk turns two — The birthday edition",
+    description: "Small cat. Big birthday. Celebrate two years of Sucuk.",
     type: "website",
     images: [
       {
@@ -37,8 +37,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sucuk — Small cat, big life",
-    description: "A small life, closely observed.",
+    title: "Sucuk turns two — The birthday edition",
+    description: "Small cat. Big birthday. Celebrate two years of Sucuk.",
     images: ["/photos/sucuk-07.jpg"],
   },
 };

@@ -1,3 +1,4 @@
+import { BirthdayCopy } from "@/components/birthday-provider";
 const dailySchedule = [
   ["06:12", "Inspect the hallway"],
   ["08:40", "First serious nap"],
@@ -21,18 +22,18 @@ export function SucukProfile() {
     <section id="life" className="relative z-10 bg-background px-5 py-20 text-foreground sm:px-8 sm:py-28 lg:px-10 lg:py-36">
       <div className="mx-auto max-w-[1500px]">
         <div className="section-kicker">
-          <span>03 / Field notes</span>
+          <span><BirthdayCopy birthday="03 / The birthday dossier">03 / Field notes</BirthdayCopy></span>
           <span className="sucuk-seal" aria-label="Sucuk approved">S</span>
         </div>
 
         <div className="grid gap-12 pt-12 lg:grid-cols-[0.85fr_1.35fr] lg:gap-24 lg:pt-20">
           <div>
-            <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-foreground/70">A life in detail</p>
+            <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-foreground/70"><BirthdayCopy birthday="Age: two. Attitude: timeless.">A life in detail</BirthdayCopy></p>
             <h2 className="mt-5 max-w-xl font-display text-[clamp(3.5rem,7vw,8rem)] italic leading-[0.88] tracking-[-0.055em]">
-              The Sucuk dossier.
+              <BirthdayCopy birthday="Older. Softer. Still in charge.">The Sucuk dossier.</BirthdayCopy>
             </h2>
             <p className="mt-8 max-w-md text-base leading-8 text-foreground/75">
-              Sucuk is a quiet domestic strategist with excellent hearing, soft opinions, and a firm belief that every object becomes better when occupied by a cat.
+              <BirthdayCopy birthday="Two candles, zero responsibilities. The birthday boy has spent two years perfecting the art of being Sucuk. Here are a few of his very particular preferences.">Sucuk is a quiet domestic strategist with excellent hearing, soft opinions, and a firm belief that every object becomes better when occupied by a cat.</BirthdayCopy>
             </p>
           </div>
 
@@ -49,8 +50,8 @@ export function SucukProfile() {
 
         <div className="mt-24 grid gap-12 border-t border-foreground/20 pt-12 lg:grid-cols-[0.7fr_1.3fr] lg:gap-24">
           <div>
-            <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-foreground/70">A typical day</p>
-            <p className="mt-4 max-w-sm text-sm leading-7 text-foreground/70">Times are approximate. Sucuk does not recognize clocks, deadlines, or the concept of being late.</p>
+            <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-foreground/70"><BirthdayCopy birthday="The birthday itinerary">A typical day</BirthdayCopy></p>
+            <p className="mt-4 max-w-sm text-sm leading-7 text-foreground/70"><BirthdayCopy birthday="The party follows his usual schedule. All celebrations must fit around six extremely important appointments with absolutely nothing.">Times are approximate. Sucuk does not recognize clocks, deadlines, or the concept of being late.</BirthdayCopy></p>
           </div>
           <ol>
             {dailySchedule.map(([time, activity]) => (

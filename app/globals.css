@@ -1,5 +1,146 @@
 @import "tailwindcss";
 
+/* The birthday edition is scoped so the everyday archive remains available. */
+.birthday-toolbar {
+  position: relative;
+  z-index: 50;
+  display: flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 8px 3%;
+  background: var(--foreground);
+  color: var(--background);
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 10px;
+  letter-spacing: .12em;
+}
+.birthday-switch { display: inline-flex; align-items: center; gap: 10px; letter-spacing: 0; font-size: 12px; padding: 4px 0; }
+.birthday-switch b { margin-left: 5px; font-size: 10px; }
+.switch-track { width: 36px; height: 21px; padding: 3px; border: 1px solid currentColor; border-radius: 20px; }
+.switch-track > span { display: block; width: 13px; height: 13px; background: currentColor; border-radius: 50%; transition: transform .2s; }
+[aria-checked="true"] .switch-track > span { transform: translateX(14px); }
+.birthday-switch:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
+.birthday-site {
+  --background: #fff6d9;
+  --foreground: #9d231f;
+  --surface: #f7b9ca;
+  --surface-strong: #ffeab3;
+  --font-display: var(--font-geist-sans), Arial, sans-serif;
+  color-scheme: light;
+  background: var(--background);
+  color: var(--foreground);
+}
+.birthday-site .birthday-toolbar { background: #9d231f; color: #fff6d9; }
+.birthday-site .birthday-switch .switch-track { background: #eec958; }
+.birthday-site .hero-section { background: #fff6d9; }
+.birthday-site .hero-stage { min-height: 790px; height: calc(100svh - 48px); background-image: radial-gradient(#c13d2820 1px, transparent 1px); background-size: 22px 22px; }
+.birthday-site header { padding-top: 22px; }
+.birthday-site header > div { border-bottom: 2px solid #9d231f; padding-bottom: 18px; }
+.birthday-site header a { font-weight: 700; }
+.birthday-site header button { display: none; }
+.birthday-site header a > .text-sm { font-size: 22px; letter-spacing: -.06em; }
+.birthday-site header .cat-mark { background: #9d231f; color: #fff6d9; }
+.birthday-site .hero-grid, .birthday-site .copy-veil { display: none; }
+.birthday-site .hero-copy { top: 26%; left: 4%; width: 44%; max-width: 710px; }
+.birthday-site .hero-copy h1 { font-size: clamp(5rem, 8.8vw, 10rem); font-weight: 900; line-height: .86; letter-spacing: -.075em; text-transform: none; }
+.birthday-title-line { color: #d64432; }
+.birthday-site .hero-copy > p:nth-of-type(1) { color: #9d231f; font-weight: 600; letter-spacing: .12em; }
+.birthday-site .hero-copy > p:nth-of-type(2) { font-size: clamp(1.4rem, 2.4vw, 2.5rem); font-style: normal; font-weight: 700; letter-spacing: -.05em; }
+.birthday-site .hero-copy > p:nth-of-type(3) { max-width: 350px; color: #7e342d; line-height: 1.8; }
+.birthday-site .hero-copy button, .birthday-site .hero-copy a { border-radius: 8px; box-shadow: 3px 3px 0 #9d231f30; }
+.birthday-site .hero-footer { border-top: 1px solid #9d231f40; padding-top: 16px; }
+.birthday-site .hero-footer p, .birthday-site .hero-footer > div { color: #9d231f; }
+.party-decoration { pointer-events: none; position: absolute; inset: 0; z-index: 2; overflow: hidden; }
+.party-star { position: absolute; color: #d64432; line-height: 1; }
+.star-one { left: 39%; top: 16%; font-size: 90px; transform: rotate(12deg); }
+.star-two { left: 2%; bottom: 15%; font-size: 48px; color: #537846; }
+.party-doodle { position: absolute; right: 3%; bottom: 11%; font-family: cursive; font-style: italic; font-size: 26px; line-height: .9; transform: rotate(-12deg); background: #fff6d9; padding: 16px; border-radius: 50%; }
+.birthday-stamp { position: absolute; z-index: 25; top: 15%; right: 5%; display: flex; width: 116px; height: 116px; flex-direction: column; align-items: center; justify-content: center; background: #edcc57; border: 2px dashed #9d231f; border-radius: 50%; transform: rotate(12deg); box-shadow: 0 0 0 6px #edcc57; }
+.birthday-stamp span { font-size: 9px; font-weight: 700; letter-spacing: .08em; }
+.birthday-stamp strong { font-size: 58px; line-height: 1; letter-spacing: -.08em; }
+.celebrate-button { position: absolute; z-index: 25; left: 4%; bottom: 12%; display: flex; align-items: center; gap: 8px; border-bottom: 1px solid #9d231f80; padding-bottom: 6px; font-size: 11px; font-weight: 600; }
+.confetti { position: fixed; inset: 0; z-index: 100; pointer-events: none; overflow: hidden; }
+.confetti i { position: absolute; top: -30px; width: 10px; height: 18px; background: #d64432; animation: birthday-confetti 2.8s ease-in forwards; }
+.confetti i:nth-child(3n) { background: #537846; border-radius: 50%; }
+.confetti i:nth-child(3n + 1) { background: #edcc57; }
+@keyframes birthday-confetti { to { transform: translateY(110vh) rotate(720deg); } }
+.birthday-site #about { background: #d64432; color: #fff6d9; --foreground: #fff6d9; --surface-strong: #d64432; border-radius: 32px 32px 0 0; }
+.birthday-site #about h2 { font-size: clamp(3.4rem, 6.5vw, 7rem); }
+.birthday-site #about dl { border-style: dashed; }
+.birthday-site #about dl dd { font-size: 46px; font-weight: 800; }
+.birthday-site #about > div > div:last-child { border: 0; min-height: 120px; margin-top: 64px; padding: 24px; background: #fff6d9; color: #9d231f; transform: rotate(-2deg); }
+.birthday-site #about > div > div:last-child p { color: #9d231f; font-size: clamp(1.5rem, 5.4vw, 6rem); white-space: normal; text-align: center; font-weight: 800; }
+.birthday-site :is(h2,h3,.font-display) { font-family: var(--font-geist-sans), Arial, sans-serif; font-style: normal; }
+.birthday-site :is(h2,h3) { font-weight: 800; letter-spacing: -.065em; line-height: .98; }
+.birthday-site .section-kicker { font-weight: 600; border-bottom-style: dashed; }
+.birthday-site .sucuk-seal { background: #edcc57; border: 0; color: #9d231f; font-weight: 800; transform: rotate(-12deg); }
+.birthday-site #life { background: #fff6d9; }
+.birthday-site #life > div > div:nth-child(2) > div:nth-child(2) { border-top: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.birthday-site #life > div > div:nth-child(2) > div:nth-child(2) > div { display: flex; flex-direction: column; gap: 8px; align-items: start; border: 1px solid #9d231f40; padding: 24px; border-radius: 8px; background: #ffeab3; }
+.birthday-site #life > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(3n) { background: #f7b9ca; }
+.birthday-site #life > div > div:nth-child(2) > div:nth-child(2) > div > span:last-child { font-size: 19px; font-weight: 600; }
+.birthday-site #journal { background: #e2e9d9; }
+.birthday-site #journal figure { background: #fff6d9; border: 0; border-radius: 4px; box-shadow: 4px 4px 0 #9d231f15; }
+.birthday-site #journal blockquote { font-size: 22px; font-weight: 600; }
+.birthday-site #journal h2 { font-size: clamp(3.4rem, 6.5vw, 7rem); }
+.birthday-site #visit { background: #f7b9ca; }
+.birthday-site #visit h2 { font-size: clamp(3.4rem, 6.8vw, 7.5rem); }
+.birthday-site #visit form h3 { font-size: 32px; }
+.birthday-site #visit .backdrop-blur { background: #fff6d9; border: 2px solid #9d231f; border-radius: 8px; box-shadow: 8px 8px 0 #9d231f; }
+.birthday-site #visit input { color-scheme: light; }
+.birthday-site #visit input:focus-visible, .birthday-site #visit label:has(input:focus-visible) { outline: 2px solid #9d231f; outline-offset: 3px; }
+.birthday-site #visit button[type="submit"] { border-radius: 6px; }
+.birthday-site footer { background: #9d231f; color: #fff6d9; --foreground: #fff6d9; --background: #9d231f; padding-top: 24px; }
+.birthday-site footer > div > div:first-child > p:first-child { font-size: clamp(3rem, 10vw, 9rem); font-weight: 900; line-height: 1; letter-spacing: -.08em; }
+.birthday-site footer > div { border-top: 0; }
+.birthday-site section[aria-labelledby="related-site-heading"] { background: #fff6d9; padding-top: 36px; }
+@media (max-width: 1023px) {
+  .birthday-site .hero-stage { height: 1100px; min-height: 1100px; }
+  .birthday-site .hero-copy { top: 145px; left: 5%; width: 85%; max-width: 650px; }
+  .birthday-site .hero-copy h1 { font-size: clamp(5.5rem, 13vw, 8rem); }
+  .birthday-site .photo-collage { inset: 56% -5rem 8%; }
+  .birthday-stamp { top: 40%; right: 8%; }
+  .star-one { left: auto; right: 7%; top: 18%; font-size: 64px; }
+  .celebrate-button { left: 5%; bottom: auto; top: 51%; }
+  .party-doodle { bottom: 10%; }
+  .birthday-site #life > div > div:nth-child(2) > div:nth-child(2) > div { padding: 20px; }
+}
+@media (max-width: 639px) {
+  .birthday-toolbar { min-height: 48px; justify-content: center; }
+  .birthday-toolbar-note { display: none; }
+  .birthday-site header { padding-top: 16px; }
+  .birthday-site header nav a { padding-inline: 8px; font-size: 11px; }
+  .birthday-site .hero-stage { min-height: 1030px; height: 1030px; }
+  .birthday-site .hero-copy { top: 120px; }
+  .birthday-site .hero-copy h1 { font-size: clamp(4.5rem, 17vw, 7rem); }
+  .birthday-site .hero-copy > p:nth-of-type(1) { font-size: 8px; letter-spacing: .06em; }
+  .birthday-site .hero-copy > p:nth-of-type(3) { max-width: 280px; }
+  .birthday-site .hero-copy > div:last-child { gap: 8px; }
+  .birthday-site .hero-copy > div:last-child > :is(button,a) { padding-inline: 12px; font-size: 11px; }
+  .birthday-site .hero-copy > div:last-child > button:last-child { padding: 0; }
+  .birthday-stamp { top: 48%; width: 85px; height: 85px; right: 7%; }
+  .birthday-stamp strong { font-size: 42px; }
+  .birthday-stamp span { font-size: 7px; }
+  .star-one { top: 10%; font-size: 46px; }
+  .birthday-site .photo-collage { inset: 59% -5rem 8%; }
+  .celebrate-button { top: 51%; max-width: 170px; font-size: 10px; }
+  .party-doodle { display: none; }
+  .birthday-site #life > div > div:nth-child(2) > div:nth-child(2) { grid-template-columns: 1fr; }
+  .birthday-site #life > div > div:nth-child(2) > div:nth-child(2) > div { padding: 20px; }
+  .birthday-site footer > div { gap: 20px; }
+  .birthday-site footer p.text-xs { max-width: 230px; line-height: 1.7; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .birthday-site .hero-stage { height: auto !important; min-height: 0; padding-top: 120px; }
+  .birthday-site .hero-copy { top: auto; left: auto; width: 100%; }
+  .birthday-site .photo-collage { inset: auto; }
+  .birthday-stamp, .party-decoration { display: none; }
+  .celebrate-button { position: relative; inset: auto; order: 2; margin: 24px 0 0; align-self: start; }
+  .confetti i { animation: none; display: none; }
+}
+
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
