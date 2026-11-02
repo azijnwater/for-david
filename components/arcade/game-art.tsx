@@ -4,6 +4,28 @@ export function GameArt({ art }: { art: string }) {
   return (
     <div className={`game-art art-${art}`} aria-hidden="true">
       <svg viewBox="0 0 320 170" focusable="false">
+        {art === "sled" && (
+          <>
+            <path
+              d="M-10 45C40 50 75 135 145 135S235 88 330 120"
+              stroke="#25235e"
+              strokeWidth="3"
+              fill="none"
+            />
+            <path
+              d="M104 99h53q5 0 8-7M109 92h40"
+              stroke="#25235e"
+              strokeWidth="4"
+              fill="none"
+            />
+            <path
+              d="M240 32v35m0-35h22v17h-22"
+              stroke="#a95800"
+              fill="#ffb21f"
+              strokeWidth="2"
+            />
+          </>
+        )}
         {art === "yarn" && (
           <>
             <path
@@ -256,7 +278,7 @@ export function GameArt({ art }: { art: string }) {
           </>
         )}
       </svg>
-      {["yarn", "feather", "fly", "run", "sofa"].includes(art) && (
+      {["yarn", "feather", "fly", "run", "sofa", "sled"].includes(art) && (
         <SucukMark className={`art-cat cat-${art}`} />
       )}
     </div>

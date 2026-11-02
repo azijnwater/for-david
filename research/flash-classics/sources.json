@@ -1,0 +1,40 @@
+{
+  "checkedAt": "2026-11-02T09:20:39.774552+00:00",
+  "sources": [
+    {
+      "repository": "ninjamuffin99/canabalt-hf",
+      "url": "https://github.com/ninjamuffin99/canabalt-hf",
+      "commit": "a1f44cc39275474b644cea63b30a553c71f235fc",
+      "licenseApi": "NOASSERTION",
+      "licenseReview": "Read code and asset terms separately. A null/NOASSERTION API value does not establish the absence of a license."
+    },
+    {
+      "repository": "conundrumer/lr-core",
+      "url": "https://github.com/conundrumer/lr-core",
+      "commit": "ce48ebed967d24ff4582995b31342440901f913d",
+      "licenseApi": null,
+      "licenseReview": "Read code and asset terms separately. A null/NOASSERTION API value does not establish the absence of a license."
+    },
+    {
+      "repository": "jacob-grahn/platform-racing-2-client",
+      "url": "https://github.com/jacob-grahn/platform-racing-2-client",
+      "commit": "6374895ec1cf88f103bcd8b67c9b8fc32a5e5a9e",
+      "licenseApi": null,
+      "licenseReview": "Read code and asset terms separately. A null/NOASSERTION API value does not establish the absence of a license."
+    },
+    {
+      "repository": "jacob-grahn/platform-racing-2-server",
+      "url": "https://github.com/jacob-grahn/platform-racing-2-server",
+      "commit": "faa1e576a1b9e47c44ebeee467e410c390e3ff68",
+      "licenseApi": "MIT",
+      "licenseReview": "Read code and asset terms separately. A null/NOASSERTION API value does not establish the absence of a license."
+    },
+    {
+      "repository": "jealouscloud/linerider-advanced",
+      "url": "https://github.com/jealouscloud/linerider-advanced",
+      "commit": "597b3d325e436a62b600bd6077acffd71ab7e989",
+      "licenseApi": "GPL-3.0",
+      "licenseReview": "Read code and asset terms separately. A null/NOASSERTION API value does not establish the absence of a license."
+    }
+  ]
+}

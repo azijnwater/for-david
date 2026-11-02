@@ -26,7 +26,7 @@ const GameRoom = dynamic(
     ssr: false,
   },
 );
-const filters = ["All games", "Arcade", "Reflex", "Puzzle"];
+const filters = ["All games", "Arcade", "Reflex", "Puzzle", "Creative"];
 export function Arcade() {
   const birthday = useBirthday();
   const [filter, setFilter] = useState("All games");
@@ -67,9 +67,9 @@ export function Arcade() {
               No responsibilities.
             </h2>
             <p className="lede">
-              Welcome to Sucuk&apos;s toy cupboard. Twelve little games for busy
-              paws, inspired by the browser classics we lost entire afternoons
-              to.
+              Welcome to Sucuk&apos;s toy cupboard. Thirteen little games for
+              busy paws, inspired by the browser classics we lost entire
+              afternoons to.
             </p>
           </div>
           <div className="arcade-sign" aria-hidden="true">
@@ -130,12 +130,22 @@ export function Arcade() {
                     </div>
                     <p>{game.description}</p>
                     <span className="arcade-card-bottom">
-                      <span>Let&apos;s play</span>
+                      <span>
+                        {game.genre === "Creative"
+                          ? "Open editor"
+                          : "Let’s play"}
+                      </span>
                       <span className="arcade-record">
-                        <Trophy size={13} aria-hidden="true" />
-                        {records[game.id]
-                          ? `Your best ${records[game.id]}`
-                          : "Set a score"}
+                        {game.genre === "Creative" ? (
+                          "Save your tracks"
+                        ) : (
+                          <>
+                            <Trophy size={13} aria-hidden="true" />
+                            {records[game.id]
+                              ? `Your best ${records[game.id]}`
+                              : "Set a score"}
+                          </>
+                        )}
                       </span>
                     </span>
                   </div>
@@ -170,8 +180,8 @@ export function Arcade() {
           </Dialog.Portal>
         </Dialog.Root>
         <p className="arcade-footnote">
-          Made for Sucuk. Played by everyone. Original little tributes to the
-          classics, with global scoreboards and a name for every high score.
+          Made for Sucuk. Played by everyone. Play for a high score, or draw a
+          track and take the long way home.
         </p>
       </div>
     </section>

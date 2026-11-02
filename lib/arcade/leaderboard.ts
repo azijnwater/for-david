@@ -29,6 +29,7 @@ export class ScoreError extends Error {
   }
 }
 const limits: Record<GameId, number> = {
+  "line-rider": 0,
   snake: 7890,
   breakout: 400,
   pong: 7,
@@ -44,6 +45,10 @@ const limits: Record<GameId, number> = {
 };
 
 export function gameId(value: unknown): GameId {
+  if (value === "line-rider")
+    throw new ScoreError(
+      "Cushion Rider is a creative track editor and does not submit scores.",
+    );
   if (typeof value !== "string" || !games.some((game) => game.id === value))
     throw new ScoreError("Choose a game from the arcade.");
   return value as GameId;

@@ -2,6 +2,9 @@
 
 # dependencies
 /node_modules
+/.reference/
+__pycache__/
+*.py[cod]
 /.pnp
 .pnp.*
 .yarn/*

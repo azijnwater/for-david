@@ -2,12 +2,24 @@
 
 import { useEffect, useRef, useState } from "react";
 import { Trophy } from "lucide-react";
+import dynamic from "next/dynamic";
 import { ActionGame } from "./action-game";
 import { PuzzleGame } from "./puzzle-game";
 import { saveRecord, type ActionId, type Game } from "@/lib/arcade/catalog";
 
 type Entry = { id: string; name: string; score: number; date: string };
+const LineRiderGame = dynamic(
+  () => import("./line-rider-game").then((module) => module.LineRiderGame),
+  { ssr: false, loading: () => <p role="status">Opening the track editor…</p> },
+);
 export function GameRoom({ game }: { game: Game }) {
+  return game.id === "line-rider" ? (
+    <LineRiderGame />
+  ) : (
+    <ScoredGameRoom game={game} />
+  );
+}
+function ScoredGameRoom({ game }: { game: Game }) {
   const [completed, setCompleted] = useState<number | null>(null);
   const [name, setName] = useState("");
   const [status, setStatus] = useState("");

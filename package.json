@@ -7,12 +7,13 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "test:arcade": "tsx --test tests/arcade.test.ts"
+    "test:arcade": "tsx --test tests/*.test.ts"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.23",
     "@vercel/blob": "^2.8.2",
     "clsx": "^2.1.1",
+    "lr-core": "^0.8.2",
     "lucide-react": "^1.48.0",
     "motion": "^13.4.3",
     "next": "16.3.6",

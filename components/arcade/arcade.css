@@ -605,6 +605,87 @@
   padding: 3rem 1rem;
   text-align: center;
 }
+.track-tools,
+.track-playback,
+.track-options {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+.track-tools [aria-pressed="true"] {
+  background: var(--ink);
+  color: var(--page-bg);
+  border-color: var(--ink);
+}
+.track-options {
+  gap: 0.75rem 1.25rem;
+  font-size: 0.85rem;
+}
+.track-options label {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+  min-height: 44px;
+  max-width: 100%;
+}
+.track-options select {
+  background: var(--surface);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0.65rem;
+  min-height: 44px;
+  max-width: 100%;
+}
+.track-options input {
+  accent-color: var(--ink);
+  width: 18px;
+  height: 18px;
+}
+.track-surface canvas {
+  cursor: crosshair;
+}
+.track-timeline {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+  margin: 1.25rem 0;
+}
+.track-timeline input {
+  flex: 1;
+  min-width: 0;
+  min-height: 44px;
+  accent-color: var(--ink);
+}
+.track-source {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.track-source summary {
+  cursor: pointer;
+  min-height: 44px;
+  font-weight: 600;
+}
+.track-source p {
+  max-width: 65ch;
+  margin-bottom: 0.75rem;
+}
+.track-source a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.game-art .cat-sled {
+  left: 34%;
+  top: 37%;
+  width: 14%;
+}
 @media (max-width: 1023px) {
   .arcade-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));

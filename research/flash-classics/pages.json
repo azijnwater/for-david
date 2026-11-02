@@ -1,0 +1,537 @@
+{
+  "checkedAt": "2026-11-02T09:16:49.932117+00:00",
+  "pages": [
+    {
+      "game": "alien-hominid",
+      "url": "https://www.newgrounds.com/portal/view/59593",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden",
+      "candidateFiles": []
+    },
+    {
+      "game": "line-rider",
+      "url": "https://www.linerider.com/",
+      "status": 200,
+      "resolvedUrl": "https://www.linerider.com/",
+      "pageSha256": "4d54201b13ca61c1d298687d537b2b0ae81e030826103d3d28210c5ae5d92306",
+      "pageTitle": "Line Rider",
+      "candidateFiles": [],
+      "interpretation": "Candidate URLs only; identity, content, dependencies and permissions need separate verification. A page can serve a later HTML5 version."
+    },
+    {
+      "game": "impossible-quiz",
+      "url": "https://www.newgrounds.com/portal/view/365143",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden",
+      "candidateFiles": []
+    },
+    {
+      "game": "club-penguin",
+      "url": "https://www.clubpenguin.com/",
+      "status": "unavailable",
+      "error": "<urlopen error [Errno 11001] getaddrinfo failed>",
+      "candidateFiles": []
+    },
+    {
+      "game": "happy-wheels",
+      "url": "https://totaljerkface.com/happy_wheels.tjf",
+      "status": 200,
+      "resolvedUrl": "https://totaljerkface.com/happy_wheels.tjf",
+      "pageSha256": "6c777be81e73d0b62d195ae38f701dde80203f5c15bc877173da35c9f2b830d9",
+      "pageTitle": "Totaljerkface.com - Home Of Happy Wheels - Happy Wheels",
+      "candidateFiles": [],
+      "interpretation": "Candidate URLs only; identity, content, dependencies and permissions need separate verification. A page can serve a later HTML5 version."
+    },
+    {
+      "game": "bloons-td",
+      "url": "https://www.kongregate.com/en/games/ninjakiwi/bloons-td-5",
+      "status": 200,
+      "resolvedUrl": "https://www.kongregate.com/en/games/ninjakiwi/bloons-td-5",
+      "pageSha256": "74f9aad439a500337631b736c74f00e14f2d3874fbd2199179509eec2b5b5af3",
+      "pageTitle": "Bloons TD 5 – Play Free Online | Kongregate",
+      "candidateFiles": [],
+      "interpretation": "Candidate URLs only; identity, content, dependencies and permissions need separate verification. A page can serve a later HTML5 version."
+    },
+    {
+      "game": "desktop-td",
+      "url": "https://www.kongregate.com/en/games/preecep/desktop-tower-defense",
+      "status": 200,
+      "resolvedUrl": "https://www.kongregate.com/en/games/preecep/desktop-tower-defense",
+      "pageSha256": "0a935ae725f7410b25944b3a284bd2d64d2b70e1a9eb07279755ad8ba5fd40d5",
+      "pageTitle": "Desktop Tower Defense on Kongregate – Play Now",
+      "candidateFiles": [
+        "https://chat.kongregate.com/game_files/0000/0492/desktop-tower-defense.swf?kongregate_game_version=1205904559"
+      ],
+      "interpretation": "Candidate URLs only; identity, content, dependencies and permissions need separate verification. A page can serve a later HTML5 version."
+    },
+    {
+      "game": "kingdom-rush",
+      "url": "https://armorgames.com/play/12141/kingdom-rush",
+      "status": 200,
+      "resolvedUrl": "https://armorgames.com/play/12141/kingdom-rush",
+      "pageSha256": "1514292bf872da821dfd2f2e0ba4fd74b18b2b638e221b43838128a10ab2ea7a",
+      "pageTitle": "Kingdom Rush - Play on Armor Games",
+      "candidateFiles": [
+        "https://cache.armorgames.com/files/games/kingdom-rush-12141.swf?v=1379178890"
+      ],
+      "interpretation": "Candidate URLs only; identity, content, dependencies and permissions need separate verification. A page can serve a later HTML5 version."
+    },
+    {
+      "game": "age-of-war",
+      "url": "https://armorgames.com/play/616/age-of-war",
+      "status": 200,
+      "resolvedUrl": "https://armorgames.com/play/616/age-of-war",
+      "pageSha256": "032b6deac5d14d7a434334b4baf3a5d2446b70c7591638d753632fc65b6e93e8",
+      "pageTitle": "Age of War - Play on Armor Games",
+      "candidateFiles": [
+        "https://cache.armorgames.com/files/games/age-of-war-616.swf?v=1373587521"
+      ],
+      "interpretation": "Candidate URLs only; identity, content, dependencies and permissions need separate verification. A page can serve a later HTML5 version."
+    },
+    {
+      "game": "stick-war",
+      "url": "https://www.stickpage.com/stickwargameplay.shtml",
+      "status": 200,
+      "resolvedUrl": "https://www.stickpage.com/stickwargameplay.shtml",
+      "pageSha256": "eb35782250aca8d68b43bc3bc01ee1946751951bb2603d84449077f9b5890ce7",
+      "pageTitle": "Play Stick War Game on Stickpage.com",
+      "candidateFiles": ["http://farm.stickpage.com/stickwar_08.swf"],
+      "interpretation": "Candidate URLs only; identity, content, dependencies and permissions need separate verification. A page can serve a later HTML5 version."
+    },
+    {
+      "game": "gemcraft",
+      "url": "https://armorgames.com/play/10317/gemcraft-labyrinth",
+      "status": 200,
+      "resolvedUrl": "https://armorgames.com/play/10317/gemcraft-labyrinth",
+      "pageSha256": "e887f9baf810feaa309a501b5cbf8421cd0536507f1ac57bf9fd42d85520fa15",
+      "pageTitle": "GemCraft Labyrinth - Play on Armor Games",
+      "candidateFiles": [
+        "https://cache.armorgames.com/files/games/gemcraft-labyrinth-10317.swf?v=1373587524"
+      ],
+      "interpretation": "Candidate URLs only; identity, content, dependencies and permissions need separate verification. A page can serve a later HTML5 version."
+    },
+    {
+      "game": "warfare-1917",
+      "url": "https://armorgames.com/play/2267/warfare-1917",
+      "status": 200,
+      "resolvedUrl": "https://armorgames.com/play/2267/warfare-1917",
+      "pageSha256": "e4e3eaa0d0550c1155ab51d7bed67678e35a5cf5deb3e92366c7fba7e35f66e6",
+      "pageTitle": "Warfare 1917 - Play on Armor Games",
+      "candidateFiles": [
+        "https://cache.armorgames.com/files/games/warfare-1917-2267.swf?v=1373587520"
+      ],
+      "interpretation": "Candidate URLs only; identity, content, dependencies and permissions need separate verification. A page can serve a later HTML5 version."
+    },
+    {
+      "game": "fancy-pants",
+      "url": "https://armorgames.com/play/553/the-fancy-pants-adventure-world-2",
+      "status": 200,
+      "resolvedUrl": "https://armorgames.com/play/553/the-fancy-pants-adventure-world-2",
+      "pageSha256": "1a29e2eb9fc5bf70d177c99d394e22b12c214aae6d61cf5c9aca21636ea7006d",
+      "pageTitle": "The Fancy Pants Adventure World 2 - Play on Armor Games",
+      "candidateFiles": [
+        "https://cache.armorgames.com/files/games/the-fancy-pants-adve-553.swf?v=1373587520"
+      ],
+      "interpretation": "Candidate URLs only; identity, content, dependencies and permissions need separate verification. A page can serve a later HTML5 version."
+    },
+    {
+      "game": "meat-boy",
+      "url": "https://www.newgrounds.com/portal/view/463241",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden",
+      "candidateFiles": []
+    },
+    {
+      "game": "n",
+      "url": "https://www.metanetsoftware.com/games/N",
+      "status": 200,
+      "resolvedUrl": "https://www.metanetsoftware.com/games/N",
+      "pageSha256": "d09cabb473e2db0d9ec8ca30a0f0579fbd103550763a8a6ad9c0a2ab5653c239",
+      "pageTitle": "N – Welcome to Metanet Software Inc",
+      "candidateFiles": [],
+      "interpretation": "Candidate URLs only; identity, content, dependencies and permissions need separate verification. A page can serve a later HTML5 version."
+    },
+    {
+      "game": "fireboy-watergirl",
+      "url": "https://armorgames.com/play/4900/the-forest-temple",
+      "status": 200,
+      "resolvedUrl": "https://armorgames.com/play/4900/the-forest-temple",
+      "pageSha256": "be6fd247981c6b9a24a41ac0ad37666247c4d9c0a00840e19a7df67b255e19cf",
+      "pageTitle": "The Forest Temple - Play on Armor Games",
+      "candidateFiles": [
+        "https://cache.armorgames.com/files/games/the-forest-temple-4900.swf?v=1373587522"
+      ],
+      "interpretation": "Candidate URLs only; identity, content, dependencies and permissions need separate verification. A page can serve a later HTML5 version."
+    },
+    {
+      "game": "worlds-hardest-game",
+      "url": "https://armorgames.com/play/1043/the-worlds-hardest",
+      "status": 200,
+      "resolvedUrl": "https://armorgames.com/play/1043/the-worlds-hardest-game",
+      "pageSha256": "47987df123aec17de007947395947acd01ef673946e6c87fe58e88c92dfb6887",
+      "pageTitle": "The Worlds Hardest Game - Play on Armor Games",
+      "candidateFiles": [
+        "https://cache.armorgames.com/files/games/the-worlds-hardest-g-1043.swf?v=1373587520"
+      ],
+      "interpretation": "Candidate URLs only; identity, content, dependencies and permissions need separate verification. A page can serve a later HTML5 version."
+    },
+    {
+      "game": "run-3",
+      "url": "https://www.kongregate.com/en/games/player_03/run-3",
+      "status": 200,
+      "resolvedUrl": "https://www.kongregate.com/en/games/player_03/run-3",
+      "pageSha256": "0d9f382c14664650d2b1b95d68830ab2f90c057b061f7558f5f71e35a1de518b",
+      "pageTitle": "Run 3 on Kongregate – Play Now",
+      "candidateFiles": [],
+      "interpretation": "Candidate URLs only; identity, content, dependencies and permissions need separate verification. A page can serve a later HTML5 version."
+    },
+    {
+      "game": "vex",
+      "url": "https://armorgames.com/play/15479/vex-2",
+      "status": 200,
+      "resolvedUrl": "https://armorgames.com/play/15479/vex-2",
+      "pageSha256": "0d5e326b6e8db88ef62c26402e5e84bbfcc58ee5678a78987e4c95e3e8f40da2",
+      "pageTitle": "Vex 2 - Play on Armor Games",
+      "candidateFiles": [
+        "https://cache.armorgames.com/files/games/vex-2-15479.swf?v=1379353152"
+      ],
+      "interpretation": "Candidate URLs only; identity, content, dependencies and permissions need separate verification. A page can serve a later HTML5 version."
+    },
+    {
+      "game": "super-mario-63",
+      "url": "https://www.newgrounds.com/portal/view/498969",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden",
+      "candidateFiles": []
+    },
+    {
+      "game": "dino-run",
+      "url": "https://pixeljam.com/",
+      "status": 200,
+      "resolvedUrl": "https://pixeljam.com/",
+      "pageSha256": "06b1a26ace404ed7937f2be0cc9f63199532d4c1c15e4bc46b7ca2ed5ef02856",
+      "pageTitle": "- PIXELJAM -",
+      "candidateFiles": [],
+      "interpretation": "Candidate URLs only; identity, content, dependencies and permissions need separate verification. A page can serve a later HTML5 version."
+    },
+    {
+      "game": "robot-unicorn",
+      "url": "https://www.adultswim.com/sitemap/games",
+      "status": 200,
+      "resolvedUrl": "https://www.adultswim.com/sitemap/games",
+      "pageSha256": "5084d00d4b6aed83ee7de0a5658e900b01eafbda189bdac838d4f6cd20bfe1c4",
+      "pageTitle": "Site Map - Adult Swim",
+      "candidateFiles": [],
+      "interpretation": "Candidate URLs only; identity, content, dependencies and permissions need separate verification. A page can serve a later HTML5 version."
+    },
+    {
+      "game": "canabalt",
+      "url": "https://canabalt.com/",
+      "status": 200,
+      "resolvedUrl": "https://canabalt.com/",
+      "pageSha256": "a131361300990f614cb62102164bb4df339f4f2784da2ff086ec3c5d6ad0d27f",
+      "pageTitle": "CANABALT",
+      "candidateFiles": [],
+      "interpretation": "Candidate URLs only; identity, content, dependencies and permissions need separate verification. A page can serve a later HTML5 version."
+    },
+    {
+      "game": "samorost",
+      "url": "https://amanita-design.net/samorost-1/",
+      "status": 200,
+      "resolvedUrl": "https://amanita-design.net/games/samorost-1.html",
+      "pageSha256": "26055b9257e1ec443d0960fa78d4bf05c3f27be5b64ba7133c690182c52be13c",
+      "pageTitle": "Samorost 1 – Amanita Design",
+      "candidateFiles": [],
+      "interpretation": "Candidate URLs only; identity, content, dependencies and permissions need separate verification. A page can serve a later HTML5 version."
+    },
+    {
+      "game": "machinarium",
+      "url": "https://amanita-design.net/machinarium/",
+      "status": "unavailable",
+      "error": "HTTP Error 404: Not Found",
+      "candidateFiles": []
+    },
+    {
+      "game": "submachine",
+      "url": "https://www.mateuszskutnik.com/archive/submachine-5-the-root-english-walkthrough/",
+      "status": 200,
+      "resolvedUrl": "https://www.mateuszskutnik.com/archive/submachine-5-the-root-english-walkthrough/",
+      "pageSha256": "5fee6845a2c8ecb852ff6ff75656d2a23ba190f3e2428d1fd5696bca9fdb5ac6",
+      "pageTitle": "Mateusz Skutnik Archive » Submachine 5: the root; english walkthrough",
+      "candidateFiles": [],
+      "interpretation": "Candidate URLs only; identity, content, dependencies and permissions need separate verification. A page can serve a later HTML5 version."
+    },
+    {
+      "game": "crimson-room",
+      "url": "https://www.fasco-csc.com/works/crimson/crimson_e.php",
+      "status": "unavailable",
+      "error": "<urlopen error [Errno 11001] getaddrinfo failed>",
+      "candidateFiles": []
+    },
+    {
+      "game": "hapland",
+      "url": "https://foon.uk/farcade/hapland/",
+      "status": 200,
+      "resolvedUrl": "https://foon.uk/farcade/hapland/",
+      "pageSha256": "32a2837bba8d6b5d6ca3e9ebae94967bcc9b4e88d83d26bb3289815ef75d1b66",
+      "pageTitle": "Hapland – Foon",
+      "candidateFiles": ["https://foon.uk/swf/hapland.swf"],
+      "interpretation": "Candidate URLs only; identity, content, dependencies and permissions need separate verification. A page can serve a later HTML5 version."
+    },
+    {
+      "game": "grow",
+      "url": "https://www.eyezmaze.com/game/grow-rpg.html",
+      "status": 200,
+      "resolvedUrl": "https://www.eyezmaze.com/game/grow-rpg.html",
+      "pageSha256": "ddd9d1fe27f39c3327d309529a944b410ca7fee977a10889b7a659e82b12cc3c",
+      "pageTitle": "GROW RPG(GAME)--EYEZMAZE--",
+      "candidateFiles": ["https://www.eyezmaze.com/game/grow-rpg.swf"],
+      "interpretation": "Candidate URLs only; identity, content, dependencies and permissions need separate verification. A page can serve a later HTML5 version."
+    },
+    {
+      "game": "portal-flash",
+      "url": "https://portal.wecreatestuff.com/",
+      "status": 200,
+      "resolvedUrl": "https://portal.wecreatestuff.com/",
+      "pageSha256": "1ec531711072ff956e4020ea151f0e1e129059882104d7be36affc560b442c55",
+      "pageTitle": "Portal: The Flash Version",
+      "candidateFiles": [],
+      "interpretation": "Candidate URLs only; identity, content, dependencies and permissions need separate verification. A page can serve a later HTML5 version."
+    },
+    {
+      "game": "achievement-unlocked",
+      "url": "https://armorgames.com/play/2893/achievement-unlocked",
+      "status": 200,
+      "resolvedUrl": "https://armorgames.com/play/2893/achievement-unlocked",
+      "pageSha256": "f2e81bf7486cc1e61e3c26da51406e27eac18a4e32e9819995aa5eb355e5fec0",
+      "pageTitle": "Achievement Unlocked - Play on Armor Games",
+      "candidateFiles": [
+        "https://cache.armorgames.com/files/games/achievement-unlocked-2893.swf?v=1373587520"
+      ],
+      "interpretation": "Candidate URLs only; identity, content, dependencies and permissions need separate verification. A page can serve a later HTML5 version."
+    },
+    {
+      "game": "epic-battle-fantasy",
+      "url": "https://www.kongregate.com/en/games/kupo707/epic-battle-fantasy-4",
+      "status": 200,
+      "resolvedUrl": "https://www.kongregate.com/en/games/kupo707/epic-battle-fantasy-4",
+      "pageSha256": "5d3468328b17d7abec561b6eb14403e4533fb4616d8d772ec59ad70e409b4947",
+      "pageTitle": "Epic Battle Fantasy 4 – Online Gameplay | Kongregate",
+      "candidateFiles": [],
+      "interpretation": "Candidate URLs only; identity, content, dependencies and permissions need separate verification. A page can serve a later HTML5 version."
+    },
+    {
+      "game": "sonny",
+      "url": "https://armorgames.com/play/2900/sonny-2",
+      "status": 200,
+      "resolvedUrl": "https://armorgames.com/play/2900/sonny-2",
+      "pageSha256": "046944ad2db70c2d57196cdf1a8f95a005f6880df7ed17c5a8d885babc443e5b",
+      "pageTitle": "Sonny 2 - Play on Armor Games",
+      "candidateFiles": [
+        "https://cache.armorgames.com/files/games/sonny-2-2900.swf?v=1373587520"
+      ],
+      "interpretation": "Candidate URLs only; identity, content, dependencies and permissions need separate verification. A page can serve a later HTML5 version."
+    },
+    {
+      "game": "stick-rpg",
+      "url": "https://www.xgenstudios.com/",
+      "status": "unavailable",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1085)>",
+      "candidateFiles": []
+    },
+    {
+      "game": "learn-to-fly",
+      "url": "https://www.kongregate.com/en/games/light_bringer777/learn-to-fly-2",
+      "status": 200,
+      "resolvedUrl": "https://www.kongregate.com/en/games/light_bringer777/learn-to-fly-2",
+      "pageSha256": "771390027cf3dad3aa2ae3628ebbf3eb63cd98fe3014a0e021a67fb22da05b6a",
+      "pageTitle": "Learn to Fly 2 – Online Gameplay | Kongregate",
+      "candidateFiles": [],
+      "interpretation": "Candidate URLs only; identity, content, dependencies and permissions need separate verification. A page can serve a later HTML5 version."
+    },
+    {
+      "game": "motherload",
+      "url": "https://www.xgenstudios.com/",
+      "status": "unavailable",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1085)>",
+      "candidateFiles": []
+    },
+    {
+      "game": "duck-life",
+      "url": "https://www.kongregate.com/en/games/wixgames/ducklife-4",
+      "status": 200,
+      "resolvedUrl": "https://www.kongregate.com/en/games/wixgames/ducklife-4",
+      "pageSha256": "0e00b5168634f915e2adf79404658362876573c7073ea89a7b283b14983007a0",
+      "pageTitle": "DuckLife 4 – Browser Game | Kongregate",
+      "candidateFiles": [],
+      "interpretation": "Candidate URLs only; identity, content, dependencies and permissions need separate verification. A page can serve a later HTML5 version."
+    },
+    {
+      "game": "binding-of-isaac",
+      "url": "https://www.newgrounds.com/portal/view/581168",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden",
+      "candidateFiles": []
+    },
+    {
+      "game": "madness-interactive",
+      "url": "https://www.newgrounds.com/portal/view/118826",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden",
+      "candidateFiles": []
+    },
+    {
+      "game": "thing-thing",
+      "url": "https://www.newgrounds.com/wiki/games/medal-games/thingthing-arena-3",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden",
+      "candidateFiles": []
+    },
+    {
+      "game": "boxhead",
+      "url": "https://armorgames.com/play/158/boxhead-2play",
+      "status": 200,
+      "resolvedUrl": "https://armorgames.com/play/158/boxhead-2play",
+      "pageSha256": "2e0824c481d4ddc4eaa3a911853836996b1126c8a298ed7f464e39be6969087c",
+      "pageTitle": "Boxhead 2Play - Play on Armor Games",
+      "candidateFiles": [
+        "https://cache.armorgames.com/files/games/boxhead-2play-158.swf?v=1373587520"
+      ],
+      "interpretation": "Candidate URLs only; identity, content, dependencies and permissions need separate verification. A page can serve a later HTML5 version."
+    },
+    {
+      "game": "strike-force-heroes",
+      "url": "https://armorgames.com/strike-force-heroes-2-game/14775",
+      "status": 200,
+      "resolvedUrl": "https://armorgames.com/play/14775/strike-force-heroes-2",
+      "pageSha256": "f636abd86b737b4875aa0910b96704ff87ff9e507b65958450bec891cc7498b5",
+      "pageTitle": "Strike Force Heroes 2 - Play on Armor Games",
+      "candidateFiles": [
+        "https://cache.armorgames.com/files/games/strike-force-heroes--14775.swf?v=1791566236"
+      ],
+      "interpretation": "Candidate URLs only; identity, content, dependencies and permissions need separate verification. A page can serve a later HTML5 version."
+    },
+    {
+      "game": "last-stand",
+      "url": "https://armorgames.com/play/1443/the-last-stand-2",
+      "status": 200,
+      "resolvedUrl": "https://armorgames.com/play/1443/the-last-stand-2",
+      "pageSha256": "47e2a15c714e0babb9e207b30b9f2c71827c893210b8ff2a582516498d5e6142",
+      "pageTitle": "The Last Stand 2 - Play on Armor Games",
+      "candidateFiles": [
+        "https://cache.armorgames.com/files/games/the-last-stand-2-1443.swf?v=1373587520"
+      ],
+      "interpretation": "Candidate URLs only; identity, content, dependencies and permissions need separate verification. A page can serve a later HTML5 version."
+    },
+    {
+      "game": "sas-zombie-assault",
+      "url": "https://www.kongregate.com/en/games/ninjakiwi/sas-zombie-assault-3",
+      "status": 200,
+      "resolvedUrl": "https://www.kongregate.com/en/games/ninjakiwi/sas-zombie-assault-3",
+      "pageSha256": "5c8ce54dbff2a1e6c630e92275e2cb4ab9711127a36492a643b962509dc618b2",
+      "pageTitle": "SAS: Zombie Assault 3 – Play Instantly Online | Kongregate",
+      "candidateFiles": [],
+      "interpretation": "Candidate URLs only; identity, content, dependencies and permissions need separate verification. A page can serve a later HTML5 version."
+    },
+    {
+      "game": "raft-wars",
+      "url": "https://www.kongregate.com/en/games/bubblebox/raft-wars",
+      "status": 200,
+      "resolvedUrl": "https://www.kongregate.com/en/games/bubblebox/raft-wars",
+      "pageSha256": "791c108603399976419ceb92964918f45846ef27276270f7d2b1967050f902d0",
+      "pageTitle": "Try Raft Wars – Free Web Game | Kongregate",
+      "candidateFiles": [],
+      "interpretation": "Candidate URLs only; identity, content, dependencies and permissions need separate verification. A page can serve a later HTML5 version."
+    },
+    {
+      "game": "bowman",
+      "url": "https://www.stickpage.com/bowmangameplay.shtml",
+      "status": 200,
+      "resolvedUrl": "https://www.stickpage.com/bowmangameplay.shtml",
+      "pageSha256": "355ec2d93b8f327cfc75a558fb02d35c6f551d15ca71e8bc4973a23dec245787",
+      "pageTitle": "Play Bowman - Stick Figures - Games and Movies",
+      "candidateFiles": ["http://farm.stickpage.com/bowmangame.swf"],
+      "interpretation": "Candidate URLs only; identity, content, dependencies and permissions need separate verification. A page can serve a later HTML5 version."
+    },
+    {
+      "game": "territory-war",
+      "url": "https://armorgames.com/play/279/territory-war",
+      "status": 200,
+      "resolvedUrl": "https://armorgames.com/play/279/territory-war",
+      "pageSha256": "87f2f565c93bcd9d27cc4b176ccce7d935c632b6538f172e2112ae389b74749b",
+      "pageTitle": "Territory WAR - Play on Armor Games",
+      "candidateFiles": [
+        "https://cache.armorgames.com/files/games/territory-war-279.swf?v=1373587520"
+      ],
+      "interpretation": "Candidate URLs only; identity, content, dependencies and permissions need separate verification. A page can serve a later HTML5 version."
+    },
+    {
+      "game": "crush-castle",
+      "url": "https://armorgames.com/play/6137/crush-the-castle-2",
+      "status": 200,
+      "resolvedUrl": "https://armorgames.com/play/6137/crush-the-castle-2",
+      "pageSha256": "98d25b586f33980d4c94e34083bcbcce21a614275cf7a47fcbc09b0a6075eef6",
+      "pageTitle": "Crush the Castle 2 - Play on Armor Games",
+      "candidateFiles": [
+        "https://cache.armorgames.com/files/games/crush-the-castle-2-6137.swf?v=1373587523"
+      ],
+      "interpretation": "Candidate URLs only; identity, content, dependencies and permissions need separate verification. A page can serve a later HTML5 version."
+    },
+    {
+      "game": "qwop",
+      "url": "https://www.foddy.net/legacy/Athletics.html",
+      "status": 200,
+      "resolvedUrl": "https://www.foddy.net/legacy/Athletics.html",
+      "pageSha256": "465bd6d3575b2f20944df025d3e3eb8fdaf1aa6ef596310ed305a09ea9fbed22",
+      "pageTitle": "QWOP",
+      "candidateFiles": [],
+      "interpretation": "Candidate URLs only; identity, content, dependencies and permissions need separate verification. A page can serve a later HTML5 version."
+    },
+    {
+      "game": "interactive-buddy",
+      "url": "https://www.newgrounds.com/portal/view/218014",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden",
+      "candidateFiles": []
+    },
+    {
+      "game": "pandemic-2",
+      "url": "https://www.newgrounds.com/portal/view/448950",
+      "status": "unavailable",
+      "error": "HTTP Error 403: Forbidden",
+      "candidateFiles": []
+    },
+    {
+      "game": "papas-pizzeria",
+      "url": "https://www.flipline.com/games/papaspizzeria/index.html",
+      "status": 200,
+      "resolvedUrl": "https://www.flipline.com/games/papaspizzeria/index.html",
+      "pageSha256": "754d6b6348f2d5d2a7bc1f25eec91ddf1c5a639f8716fbfb6098a8425f11753f",
+      "pageTitle": "Papa's Pizzeria | Free Flash Game | Flipline Studios",
+      "candidateFiles": [
+        "https://i.flipline.com/gamefiles/papaspizzeria/papaspizzeria_v2.swf"
+      ],
+      "interpretation": "Candidate URLs only; identity, content, dependencies and permissions need separate verification. A page can serve a later HTML5 version."
+    },
+    {
+      "game": "transformice",
+      "url": "https://www.transformice.com/official-websource/index.php",
+      "status": 200,
+      "resolvedUrl": "https://www.transformice.com/official-websource/index.php",
+      "pageSha256": "b083661454565bfe28f86758c67db79155ba63bb3e563402b06f0ace725f6875",
+      "pageTitle": "Transformice ! » Official websources",
+      "candidateFiles": [],
+      "interpretation": "Candidate URLs only; identity, content, dependencies and permissions need separate verification. A page can serve a later HTML5 version."
+    },
+    {
+      "game": "platform-racing-2",
+      "url": "https://www.kongregate.com/en/games/jiggmin/platform-racing-2",
+      "status": 200,
+      "resolvedUrl": "https://www.kongregate.com/en",
+      "pageSha256": "6a3a3d2b8cd5c8ea4daaa1abd0159ca903e6c98daf9171e5d635d84af51837cf",
+      "pageTitle": "Play Free Online Games on Kongregate – The Ultimate Gaming Platform",
+      "candidateFiles": [],
+      "interpretation": "Candidate URLs only; identity, content, dependencies and permissions need separate verification. A page can serve a later HTML5 version."
+    }
+  ]
+}

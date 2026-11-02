@@ -1,0 +1,1516 @@
+{
+  "scope": "54 requested games. Edition choices favor recognizable Flash releases, not an asserted universal popularity ranking.",
+  "verification": "Publisher pages and source repositories are references, not evidence of a completed recreation. Binary download results and hashes are recorded separately in files.json. No original game assets are published by this catalogue.",
+  "games": [
+    {
+      "id": "alien-hominid",
+      "title": "Alien Hominid",
+      "edition": "2002 Flash web release",
+      "category": "Defining classics",
+      "creator": "Tom Fulp and Dan Paladin",
+      "page": "https://www.newgrounds.com/portal/view/59593",
+      "mechanics": [
+        "run-and-gun aiming",
+        "head riding and freak attacks",
+        "grenades",
+        "boss encounters"
+      ],
+      "sucuk": "A stranded Sucuk fights rogue vacuum cleaners with yarn projectiles.",
+      "sourceStatus": "Original author release located; local page download returned HTTP 403.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      }
+    },
+    {
+      "id": "line-rider",
+      "title": "Line Rider",
+      "edition": "Classic line-and-sled physics; lr-core 0.8.2 compatibility engine",
+      "category": "Defining classics",
+      "creator": "Boštjan Čadež; compatibility engine by David Lu",
+      "page": "https://www.linerider.com/",
+      "mechanics": [
+        "one-sided line collisions",
+        "constrained sled and rider",
+        "acceleration and scenery lines",
+        "track editing and deterministic playback"
+      ],
+      "sucuk": "Sucuk rides a cushion sled across hand-drawn household tracks.",
+      "sourceStatus": "MIT declared in upstream and npm package metadata. Existing compatibility engine located; not the original 2006 FLA.",
+      "sources": [
+        "https://github.com/conundrumer/lr-core",
+        "https://github.com/jealouscloud/linerider-advanced"
+      ],
+      "implementation": {
+        "status": "source-engine-adaptation",
+        "exactParityVerified": false
+      }
+    },
+    {
+      "id": "impossible-quiz",
+      "title": "The Impossible Quiz",
+      "edition": "Original 2007 quiz",
+      "category": "Defining classics",
+      "creator": "Splapp-me-do",
+      "page": "https://www.newgrounds.com/portal/view/365143",
+      "mechanics": [
+        "trick answers and wordplay",
+        "three lives",
+        "skips",
+        "timed and pointer challenges"
+      ],
+      "sucuk": "Original cat riddles, hidden paw interactions, and deliberately misleading answers.",
+      "sourceStatus": "Author release located; no reusable source license located in this audit.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      }
+    },
+    {
+      "id": "club-penguin",
+      "title": "Club Penguin",
+      "edition": "Late classic Flash world; exact party/content snapshot must be pinned",
+      "category": "Defining classics",
+      "creator": "Club Penguin / Disney",
+      "page": "https://www.clubpenguin.com/",
+      "mechanics": [
+        "persistent accounts and inventories",
+        "shared rooms",
+        "chat and moderation",
+        "minigames and seasonal events"
+      ],
+      "sucuk": "A shared cat neighbourhood with baskets, outfits, and household minigames.",
+      "sourceStatus": "Original service closed. A client archive alone is insufficient. Snapshot, server implementation, persistence and chat moderation remain required.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      }
+    },
+    {
+      "id": "happy-wheels",
+      "title": "Happy Wheels",
+      "edition": "Classic full Flash version, not a demo",
+      "category": "Defining classics",
+      "creator": "Jim Bonacci / Fancy Force",
+      "page": "https://totaljerkface.com/happy_wheels.tjf",
+      "mechanics": [
+        "articulated ragdoll vehicles",
+        "joint damage",
+        "obstacle courses",
+        "level editor and shared levels"
+      ],
+      "sucuk": "A floppy toy-cat rider on household vehicles, with stuffing instead of gore.",
+      "sourceStatus": "Official full-game host located. No reusable original source located; user-level service is a separate dependency.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      }
+    },
+    {
+      "id": "bloons-td",
+      "title": "Bloons Tower Defense",
+      "edition": "Bloons TD 5, Flash",
+      "category": "Tower defense and strategy",
+      "creator": "Ninja Kiwi",
+      "page": "https://www.kongregate.com/en/games/ninjakiwi/bloons-td-5",
+      "mechanics": [
+        "layered bloon types",
+        "two-path tower upgrades",
+        "target priorities",
+        "tracks and escalating waves",
+        "co-op in the original service"
+      ],
+      "sucuk": "Cat towers bat balloon toys with feathers, yarn and laser pointers.",
+      "sourceStatus": "Developer-uploaded release located. Full campaign tables, tower data, economy, map data and network dependencies require reference inspection.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      }
+    },
+    {
+      "id": "desktop-td",
+      "title": "Desktop Tower Defense",
+      "edition": "Desktop Tower Defense 1.5-era release",
+      "category": "Tower defense and strategy",
+      "creator": "Paul Preece",
+      "page": "https://www.kongregate.com/en/games/preecep/desktop-tower-defense",
+      "mechanics": [
+        "player-built mazes",
+        "dynamic pathfinding",
+        "air waves",
+        "tower placement validation",
+        "upgrades and selling"
+      ],
+      "sucuk": "Build a maze of scratching posts across David's desk.",
+      "sourceStatus": "Publisher release and an embedded SWF URL located; binary verification recorded separately.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      },
+      "referenceBuild": {
+        "url": "https://chat.kongregate.com/game_files/0000/0492/desktop-tower-defense.swf",
+        "sha256": "6275b34248275ad18374ad96d0c2aabfc805bc37fe1d2f6b0e3b8129f6420dd5",
+        "bytes": 399371,
+        "metadata": {
+          "signature": "CWS",
+          "swfVersion": 8,
+          "declaredUncompressedBytes": 638229,
+          "width": 700.0,
+          "height": 500.0,
+          "frameRate": 32.0,
+          "frameCount": 2,
+          "actionScript": "AS1/AS2",
+          "topLevelTags": 446,
+          "inspection": "Static metadata only; not executed or gameplay-tested"
+        },
+        "gameplayVerified": false
+      }
+    },
+    {
+      "id": "kingdom-rush",
+      "title": "Kingdom Rush",
+      "edition": "Original Kingdom Rush, Flash campaign",
+      "category": "Tower defense and strategy",
+      "creator": "Ironhide Game Studio",
+      "page": "https://armorgames.com/play/12141/kingdom-rush",
+      "mechanics": [
+        "fixed tower sites",
+        "barracks rally points",
+        "armour and magic resistance",
+        "reinforcements and rain of fire",
+        "campaign stars"
+      ],
+      "sucuk": "Scratching posts, cat guards, and yarn mages defend the living room.",
+      "sourceStatus": "Official publisher release located. Premium content must remain distinct from the free campaign.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      },
+      "referenceBuild": {
+        "url": "https://cache.armorgames.com/files/games/kingdom-rush-12141.swf?v=1379178890",
+        "sha256": "7b5467a3eccc17f6dd001ff2d41bdf1b03d79fd515a2a9586c42bfd982bb1e23",
+        "bytes": 32149996,
+        "metadata": {
+          "signature": "CWS",
+          "swfVersion": 10,
+          "declaredUncompressedBytes": 36698789,
+          "width": 700.0,
+          "height": 600.0,
+          "frameRate": 30.0,
+          "frameCount": 4,
+          "actionScript": "AS3",
+          "topLevelTags": 19484,
+          "inspection": "Static metadata only; not executed or gameplay-tested"
+        },
+        "gameplayVerified": false
+      }
+    },
+    {
+      "id": "age-of-war",
+      "title": "Age of War",
+      "edition": "Original five-age Flash release",
+      "category": "Tower defense and strategy",
+      "creator": "Louissi",
+      "page": "https://armorgames.com/play/616/age-of-war",
+      "mechanics": [
+        "lane combat",
+        "five evolutionary ages",
+        "unit and turret economy",
+        "special attack cooldown"
+      ],
+      "sucuk": "Evolve from kitten toys to an advanced feline household empire.",
+      "sourceStatus": "Official publisher release located; source not located.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      },
+      "referenceBuild": {
+        "url": "https://cache.armorgames.com/files/games/age-of-war-616.swf?v=1373587521",
+        "sha256": "d4ae4734842d9d874b009d9097fa9635d424df26128a1a22177126e8e869c4ac",
+        "bytes": 3628478,
+        "metadata": {
+          "signature": "CWS",
+          "swfVersion": 9,
+          "declaredUncompressedBytes": 4098898,
+          "width": 650.0,
+          "height": 450.0,
+          "frameRate": 40.0,
+          "frameCount": 15,
+          "actionScript": "AS1/AS2",
+          "topLevelTags": 1240,
+          "inspection": "Static metadata only; not executed or gameplay-tested"
+        },
+        "gameplayVerified": false
+      }
+    },
+    {
+      "id": "stick-war",
+      "title": "Stick War",
+      "edition": "Original Flash campaign",
+      "category": "Tower defense and strategy",
+      "creator": "Crazy Jay and Brock",
+      "page": "https://www.stickpage.com/stickwargameplay.shtml",
+      "mechanics": [
+        "gold mining",
+        "direct unit control",
+        "army commands",
+        "unit upgrades",
+        "statue destruction"
+      ],
+      "sucuk": "Lead a cat colony, gather treats, and defend its scratching-post statue.",
+      "sourceStatus": "Original publisher page embeds stickwar_08.swf; binary verification recorded separately.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      },
+      "referenceBuild": {
+        "url": "https://farm.stickpage.com/stickwar_08.swf",
+        "sha256": "9bff25416c98506ba01493b7e3fa523890632b4963e4f0ac33f5cbbb023c7c0b",
+        "bytes": 7003484,
+        "metadata": {
+          "signature": "CWS",
+          "swfVersion": 9,
+          "declaredUncompressedBytes": 8106635,
+          "width": 600.0,
+          "height": 400.0,
+          "frameRate": 30.0,
+          "frameCount": 132,
+          "actionScript": "AS1/AS2",
+          "topLevelTags": 3201,
+          "inspection": "Static metadata only; not executed or gameplay-tested"
+        },
+        "gameplayVerified": false
+      }
+    },
+    {
+      "id": "gemcraft",
+      "title": "GemCraft",
+      "edition": "GemCraft Labyrinth",
+      "category": "Tower defense and strategy",
+      "creator": "Game in a Bottle",
+      "page": "https://armorgames.com/play/10317/gemcraft-labyrinth",
+      "mechanics": [
+        "gem mixing and grades",
+        "mana pool economy",
+        "towers and traps",
+        "labyrinth campaign",
+        "battle modifiers"
+      ],
+      "sucuk": "Combine coloured yarn gems to defend a maze of cat tunnels.",
+      "sourceStatus": "Publisher release and official strategy guide located. Paid Sorcerer's Package is distinct from the free build.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      },
+      "referenceBuild": {
+        "url": "https://cache.armorgames.com/files/games/gemcraft-labyrinth-10317.swf?v=1373587524",
+        "sha256": "6be2e24112e447003bbfc32aa00050b346c5374d105c299a1e890927c687c612",
+        "bytes": 9389052,
+        "metadata": {
+          "signature": "ZWS",
+          "swfVersion": 21,
+          "declaredUncompressedBytes": 10795679,
+          "width": 800.0,
+          "height": 600.0,
+          "frameRate": 30.0,
+          "frameCount": 3,
+          "actionScript": "AS3",
+          "topLevelTags": 2214,
+          "inspection": "Static metadata only; not executed or gameplay-tested"
+        },
+        "gameplayVerified": false
+      }
+    },
+    {
+      "id": "warfare-1917",
+      "title": "Warfare 1917",
+      "edition": "Original Flash release",
+      "category": "Tower defense and strategy",
+      "creator": "Con Artist Games",
+      "page": "https://armorgames.com/play/2267/warfare-1917",
+      "mechanics": [
+        "trench occupancy",
+        "squad deployment",
+        "morale",
+        "support fire",
+        "two campaigns"
+      ],
+      "sucuk": "Toy-cat squads contest blanket forts; preserve tactical systems without historical reskin claims.",
+      "sourceStatus": "Official publisher release located; source not located.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      },
+      "referenceBuild": {
+        "url": "https://cache.armorgames.com/files/games/warfare-1917-2267.swf?v=1373587520",
+        "sha256": "38b0b1487f05411d572c98860a1aea7c2e4044e431621a78509f0ff2f8cdaf4d",
+        "bytes": 5683029,
+        "metadata": {
+          "signature": "CWS",
+          "swfVersion": 9,
+          "declaredUncompressedBytes": 6255686,
+          "width": 800.0,
+          "height": 420.0,
+          "frameRate": 35.0,
+          "frameCount": 11,
+          "actionScript": "AS1/AS2",
+          "topLevelTags": 2120,
+          "inspection": "Static metadata only; not executed or gameplay-tested"
+        },
+        "gameplayVerified": false
+      }
+    },
+    {
+      "id": "fancy-pants",
+      "title": "Fancy Pants Adventures",
+      "edition": "The Fancy Pants Adventure World 2",
+      "category": "Platformers and skill games",
+      "creator": "Brad Borne",
+      "page": "https://armorgames.com/play/553/the-fancy-pants-adventure-world-2",
+      "mechanics": [
+        "momentum and slopes",
+        "wall jumps",
+        "sliding and rolling",
+        "doors and secrets",
+        "shell-golf challenges"
+      ],
+      "sucuk": "A fast, fluffy Sucuk slides through a hand-drawn house in tiny trousers.",
+      "sourceStatus": "Official publisher release located; source not located.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      },
+      "referenceBuild": {
+        "url": "https://cache.armorgames.com/files/games/the-fancy-pants-adve-553.swf?v=1373587520",
+        "sha256": "e06a5b7b9f54c3c6ed777ca57474e09d3d9f2b2d66657467e6e03ca6a56686b5",
+        "bytes": 9834261,
+        "metadata": {
+          "signature": "CWS",
+          "swfVersion": 8,
+          "declaredUncompressedBytes": 11391496,
+          "width": 720.0,
+          "height": 480.0,
+          "frameRate": 60.0,
+          "frameCount": 4,
+          "actionScript": "AS1/AS2",
+          "topLevelTags": 5373,
+          "inspection": "Static metadata only; not executed or gameplay-tested"
+        },
+        "gameplayVerified": false
+      }
+    },
+    {
+      "id": "meat-boy",
+      "title": "Meat Boy",
+      "edition": "2008 Flash original, not Super Meat Boy",
+      "category": "Platformers and skill games",
+      "creator": "Edmund McMillen and Jonathan McEntee",
+      "page": "https://www.newgrounds.com/portal/view/463241",
+      "mechanics": [
+        "tight air control",
+        "wall sliding and jumping",
+        "instant retries",
+        "short lethal levels",
+        "collectible bandages"
+      ],
+      "sucuk": "A soft toy Sucuk climbs furniture and rescues a yarn companion.",
+      "sourceStatus": "Original author release located; local download returned HTTP 403.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      }
+    },
+    {
+      "id": "n",
+      "title": "N",
+      "edition": "N v2 Flash era",
+      "category": "Platformers and skill games",
+      "creator": "Metanet Software",
+      "page": "https://www.metanetsoftware.com/games/N",
+      "mechanics": [
+        "tile-shape collision response",
+        "momentum and wall jumps",
+        "gold timer",
+        "switches and exit doors",
+        "enemy-specific AI"
+      ],
+      "sucuk": "A nimble Sucuk collects treats and escapes vacuum-patrolled rooms.",
+      "sourceStatus": "Creator publishes collision tutorial source ZIPs, not the complete game's source.",
+      "sources": [
+        "https://www.metanetsoftware.com/2016/n-tutorial-a-collision-detection-and-response",
+        "https://www.metanetsoftware.com/2016/n-tutorial-b-broad-phase-collision"
+      ],
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      }
+    },
+    {
+      "id": "fireboy-watergirl",
+      "title": "Fireboy and Watergirl",
+      "edition": "The Forest Temple",
+      "category": "Platformers and skill games",
+      "creator": "Oslo Albet",
+      "page": "https://armorgames.com/play/4900/the-forest-temple",
+      "mechanics": [
+        "simultaneous two-character controls",
+        "element-specific hazards",
+        "switches and moving platforms",
+        "both-character exit condition"
+      ],
+      "sucuk": "Sunbeam Sucuk and Moonbeam Sucuk solve paired household puzzles.",
+      "sourceStatus": "Original publisher release located; source not located.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      },
+      "referenceBuild": {
+        "url": "https://cache.armorgames.com/files/games/the-forest-temple-4900.swf?v=1373587522",
+        "sha256": "e46eda9b1004c280aa1ce7e8396d1513d2a98376fbc4f82c2ace5df73fed758e",
+        "bytes": 1855972,
+        "metadata": {
+          "signature": "CWS",
+          "swfVersion": 9,
+          "declaredUncompressedBytes": 2352810,
+          "width": 640.0,
+          "height": 480.0,
+          "frameRate": 25.0,
+          "frameCount": 3,
+          "actionScript": "AS3",
+          "topLevelTags": 1000,
+          "inspection": "Static metadata only; not executed or gameplay-tested"
+        },
+        "gameplayVerified": false
+      }
+    },
+    {
+      "id": "worlds-hardest-game",
+      "title": "World's Hardest Game",
+      "edition": "Original 30-level game",
+      "category": "Platformers and skill games",
+      "creator": "Snubby Land",
+      "page": "https://armorgames.com/play/1043/the-worlds-hardest",
+      "mechanics": [
+        "precisely timed enemy paths",
+        "coin collection",
+        "safe zones",
+        "death counter",
+        "30-level progression"
+      ],
+      "sucuk": "Guide a cat token past roaming vacuum toys and collect treats.",
+      "sourceStatus": "Official publisher release located; exact movement schedules and all maps require extraction or measurement.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      },
+      "referenceBuild": {
+        "url": "https://cache.armorgames.com/files/games/the-worlds-hardest-g-1043.swf?v=1373587520",
+        "sha256": "ee125fff640942ee4cb72a4a195e931b8d6a8bb6a3f6fce268fd8c8d7e0f91a8",
+        "bytes": 744124,
+        "metadata": {
+          "signature": "CWS",
+          "swfVersion": 8,
+          "declaredUncompressedBytes": 997983,
+          "width": 550.0,
+          "height": 400.0,
+          "frameRate": 30.0,
+          "frameCount": 180,
+          "actionScript": "AS1/AS2",
+          "topLevelTags": 1524,
+          "inspection": "Static metadata only; not executed or gameplay-tested"
+        },
+        "gameplayVerified": false
+      }
+    },
+    {
+      "id": "run-3",
+      "title": "Run 3",
+      "edition": "Late Flash release",
+      "category": "Platformers and skill games",
+      "creator": "player_03",
+      "page": "https://www.kongregate.com/en/games/player_03/run-3",
+      "mechanics": [
+        "tunnel gravity rotation",
+        "crumbling tiles",
+        "character-specific movement",
+        "explore and infinite modes",
+        "galaxy map"
+      ],
+      "sucuk": "Sucuk runs around the inside of a seemingly endless cardboard tunnel.",
+      "sourceStatus": "Developer-uploaded release located. Geometry, camera and save structure are required for fidelity.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      }
+    },
+    {
+      "id": "vex",
+      "title": "Vex",
+      "edition": "Vex 2, a verified Flash-era release",
+      "category": "Platformers and skill games",
+      "creator": "Amazing Adam",
+      "page": "https://armorgames.com/play/15479/vex-2",
+      "mechanics": [
+        "wall jumps and slides",
+        "checkpoints",
+        "moving hazards",
+        "timed acts",
+        "level editor"
+      ],
+      "sucuk": "An agile Sucuk clears household obstacle courses.",
+      "sourceStatus": "Publisher Flash release located; later HTML5 Vex editions are not substituted silently.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      },
+      "referenceBuild": {
+        "url": "https://cache.armorgames.com/files/games/vex-2-15479.swf?v=1379353152",
+        "sha256": "28e6f18821a80bc4383a3d1e61940e1ecb0605c7bdc18eced2ee22822b209413",
+        "bytes": 4343844,
+        "metadata": {
+          "signature": "CWS",
+          "swfVersion": 15,
+          "declaredUncompressedBytes": 5014980,
+          "width": 640.0,
+          "height": 560.0,
+          "frameRate": 30.0,
+          "frameCount": 5,
+          "actionScript": "AS3",
+          "topLevelTags": 2255,
+          "inspection": "Static metadata only; not executed or gameplay-tested"
+        },
+        "gameplayVerified": false
+      }
+    },
+    {
+      "id": "super-mario-63",
+      "title": "Super Mario 63",
+      "edition": "2012 updated Flash version",
+      "category": "Platformers and skill games",
+      "creator": "Runouw",
+      "page": "https://www.newgrounds.com/portal/view/498969",
+      "mechanics": [
+        "multiple jump types",
+        "FLUDD nozzles",
+        "shine collection",
+        "hub-world progression",
+        "level designer"
+      ],
+      "sucuk": "Sucuk explores a toy castle with water-powered cat gadgets.",
+      "sourceStatus": "Original release URL located; access/removal status and a verified reference binary remain unresolved.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      }
+    },
+    {
+      "id": "dino-run",
+      "title": "Dino Run",
+      "edition": "Original free Flash release",
+      "category": "Platformers and skill games",
+      "creator": "Pixeljam",
+      "page": "https://pixeljam.com/",
+      "mechanics": [
+        "doom-wall pursuit",
+        "slopes and momentum",
+        "eggs and DNA",
+        "sprinting",
+        "persistent upgrades"
+      ],
+      "sucuk": "Sucuk outruns a wave of noisy vacuum cleaners through the house.",
+      "sourceStatus": "Creator's site links the free version. Original Flash build and multiplayer dependencies require inspection.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      }
+    },
+    {
+      "id": "robot-unicorn",
+      "title": "Robot Unicorn Attack",
+      "edition": "Original Adult Swim Flash release",
+      "category": "Platformers and skill games",
+      "creator": "Spiritonin Media / Adult Swim",
+      "page": "https://www.adultswim.com/sitemap/games",
+      "mechanics": [
+        "double jumps",
+        "dash-through stars",
+        "three wishes",
+        "speed progression",
+        "procedural platforms"
+      ],
+      "sucuk": "A dream-world Sucuk dashes through yarn stars with original audio.",
+      "sourceStatus": "Publisher catalogue entry located. Original binary and audio reuse permission are not established.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      }
+    },
+    {
+      "id": "canabalt",
+      "title": "Canabalt",
+      "edition": "Original-style Canabalt via authorized HaxeFlixel port",
+      "category": "Platformers and skill games",
+      "creator": "Adam Saltsman / Finji; port by Cameron Taylor",
+      "page": "https://canabalt.com/",
+      "mechanics": [
+        "speed-dependent variable-height jump",
+        "automatic acceleration",
+        "stumble slowdown",
+        "procedural roofs",
+        "hallways, cranes, collapsing roofs and bombs"
+      ],
+      "sucuk": "Sucuk races across a skyline of shelves and rooftops with original cat artwork.",
+      "sourceStatus": "MIT code downloaded at pinned commit. Proprietary game assets expressly may not be redistributed.",
+      "sources": [
+        "https://github.com/ninjamuffin99/canabalt-hf",
+        "https://github.com/ninjamuffin99/canabalt-assets/blob/main/LICENSE.md"
+      ],
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      }
+    },
+    {
+      "id": "samorost",
+      "title": "Samorost",
+      "edition": "Samorost 1, original Flash release",
+      "category": "Puzzle, adventure and escape",
+      "creator": "Amanita Design",
+      "page": "https://amanita-design.net/samorost-1/",
+      "mechanics": [
+        "scene-specific click interactions",
+        "ordered environmental puzzles",
+        "animated scene transitions"
+      ],
+      "sucuk": "Sucuk explores a miniature world built from plants, blankets and household textures.",
+      "sourceStatus": "Creator release page located. Remaster must be kept distinct from original Flash content.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      }
+    },
+    {
+      "id": "machinarium",
+      "title": "Machinarium",
+      "edition": "2009 Flash game; public demo as initial reference",
+      "category": "Puzzle, adventure and escape",
+      "creator": "Amanita Design",
+      "page": "https://amanita-design.net/machinarium/",
+      "mechanics": [
+        "inventory combinations",
+        "body extension and contraction",
+        "dialogue thought bubbles",
+        "scene puzzles and hints"
+      ],
+      "sucuk": "A mechanical toy Sucuk solves original household machinery puzzles.",
+      "sourceStatus": "Commercial full game; public demo is not equivalent to its complete content. No reusable source located.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      }
+    },
+    {
+      "id": "submachine",
+      "title": "Submachine",
+      "edition": "Submachine 5: The Root",
+      "category": "Puzzle, adventure and escape",
+      "creator": "Mateusz Skutnik",
+      "page": "https://www.mateuszskutnik.com/archive/submachine-5-the-root-english-walkthrough/",
+      "mechanics": [
+        "interconnected rooms",
+        "inventory and notes",
+        "teleport coordinate puzzles",
+        "persistent device states"
+      ],
+      "sucuk": "An inquisitive Sucuk explores forgotten rooms beneath the house.",
+      "sourceStatus": "Creator walkthrough and release archive located. Original build still needs verification.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      }
+    },
+    {
+      "id": "crimson-room",
+      "title": "Crimson Room",
+      "edition": "Original 2004 Flash escape room",
+      "category": "Puzzle, adventure and escape",
+      "creator": "Toshimitsu Takagi",
+      "page": "https://www.fasco-csc.com/works/crimson/crimson_e.php",
+      "mechanics": [
+        "directional room views",
+        "small hidden objects",
+        "inventory combinations",
+        "safe-code dependency",
+        "escape sequence"
+      ],
+      "sucuk": "Sucuk searches a red bedroom for the hidden route to breakfast.",
+      "sourceStatus": "Original domain fails DNS in this audit. Preserved build and external code dependencies remain unresolved.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      }
+    },
+    {
+      "id": "hapland",
+      "title": "Hapland",
+      "edition": "Original Hapland",
+      "category": "Puzzle, adventure and escape",
+      "creator": "Robin Allen",
+      "page": "https://foon.uk/farcade/hapland/",
+      "mechanics": [
+        "single-screen causal state machine",
+        "ordered actions",
+        "timing-sensitive interactions",
+        "reset after failed states"
+      ],
+      "sucuk": "A tiny cat household comes alive through precisely ordered paw interactions.",
+      "sourceStatus": "Creator-hosted original SWF located; download and metadata inspection recorded separately.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      },
+      "referenceBuild": {
+        "url": "https://foon.uk/swf/hapland.swf",
+        "sha256": "bd32b58d5d88cbd322b4930ef59c9a8393a9e0d70256cbf03fc2632f6446e8a3",
+        "bytes": 250902,
+        "metadata": {
+          "signature": "CWS",
+          "swfVersion": 7,
+          "declaredUncompressedBytes": 342817,
+          "width": 700.0,
+          "height": 500.0,
+          "frameRate": 24.0,
+          "frameCount": 59,
+          "actionScript": "AS1/AS2",
+          "topLevelTags": 628,
+          "inspection": "Static metadata only; not executed or gameplay-tested"
+        },
+        "gameplayVerified": false
+      }
+    },
+    {
+      "id": "grow",
+      "title": "Grow (Eyezmaze)",
+      "edition": "GROW RPG",
+      "category": "Puzzle, adventure and escape",
+      "creator": "ON / EYEZMAZE",
+      "page": "https://www.eyezmaze.com/game/grow-rpg.html",
+      "mechanics": [
+        "item ordering",
+        "interdependent growth stages",
+        "automatic hero resolution",
+        "max-level completion"
+      ],
+      "sucuk": "Grow Sucuk's miniature home by choosing the order of toys, food and furniture.",
+      "sourceStatus": "Creator-hosted grow-rpg.swf located; download verification recorded separately.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      },
+      "referenceBuild": {
+        "url": "https://www.eyezmaze.com/game/grow-rpg.swf",
+        "sha256": "6e82e3c2bf45c3a5562793ee921300f744f85e8f65ffc1a57569e68c27789645",
+        "bytes": 1540143,
+        "metadata": {
+          "signature": "CWS",
+          "swfVersion": 43,
+          "declaredUncompressedBytes": 1958027,
+          "width": 480.0,
+          "height": 690.0,
+          "frameRate": 17.0,
+          "frameCount": 29,
+          "actionScript": "AS3",
+          "topLevelTags": 1535,
+          "inspection": "Static metadata only; not executed or gameplay-tested"
+        },
+        "gameplayVerified": false
+      }
+    },
+    {
+      "id": "portal-flash",
+      "title": "Portal: The Flash Version",
+      "edition": "Original 40-level Flash version",
+      "category": "Puzzle, adventure and escape",
+      "creator": "Hen Mazolski and Ido Tal / We Create Stuff",
+      "page": "https://portal.wecreatestuff.com/",
+      "mechanics": [
+        "paired portals",
+        "momentum transfer",
+        "portable-surface restrictions",
+        "cubes, switches, turrets and energy balls",
+        "40-level campaign"
+      ],
+      "sucuk": "Sucuk links two cat flaps through a household test chamber.",
+      "sourceStatus": "Creator site confirms full 40-level game. Play-page download returned HTTP 403; no source license located.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      }
+    },
+    {
+      "id": "achievement-unlocked",
+      "title": "Achievement Unlocked",
+      "edition": "Original Flash release",
+      "category": "Puzzle, adventure and escape",
+      "creator": "John Cooney / jmtb02",
+      "page": "https://armorgames.com/play/2893/achievement-unlocked",
+      "mechanics": [
+        "single-room platformer",
+        "achievement-trigger rules",
+        "death and movement tracking",
+        "completion checklist"
+      ],
+      "sucuk": "Earn cat achievements for sitting, falling, exploring and interrupting everything.",
+      "sourceStatus": "Publisher release located. The complete trigger table is required for a faithful recreation.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      },
+      "referenceBuild": {
+        "url": "https://cache.armorgames.com/files/games/achievement-unlocked-2893.swf?v=1373587520",
+        "sha256": "19b8067740489165d3b207d1ba547e5349ed0af402c57afe92415c7da17bb9b7",
+        "bytes": 2499931,
+        "metadata": {
+          "signature": "CWS",
+          "swfVersion": 9,
+          "declaredUncompressedBytes": 2574273,
+          "width": 720.0,
+          "height": 400.0,
+          "frameRate": 30.0,
+          "frameCount": 8,
+          "actionScript": "AS1/AS2",
+          "topLevelTags": 682,
+          "inspection": "Static metadata only; not executed or gameplay-tested"
+        },
+        "gameplayVerified": false
+      }
+    },
+    {
+      "id": "epic-battle-fantasy",
+      "title": "Epic Battle Fantasy",
+      "edition": "Epic Battle Fantasy 4, free Flash build",
+      "category": "RPG and progression",
+      "creator": "Matt Roszak / kupo707",
+      "page": "https://www.kongregate.com/en/games/kupo707/epic-battle-fantasy-4",
+      "mechanics": [
+        "turn-based party combat",
+        "elemental resistances and status effects",
+        "equipment and skills",
+        "exploration and quests",
+        "save progression"
+      ],
+      "sucuk": "A cat party adventures through household kingdoms with yarn-themed equipment.",
+      "sourceStatus": "Author release located. Full item, skill, enemy and campaign data are substantial separate work.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      }
+    },
+    {
+      "id": "sonny",
+      "title": "Sonny",
+      "edition": "Sonny 2",
+      "category": "RPG and progression",
+      "creator": "Krin",
+      "page": "https://armorgames.com/play/2900/sonny-2",
+      "mechanics": [
+        "class skill trees",
+        "cooldowns and focus",
+        "buff/debuff combat",
+        "party AI",
+        "zone progression"
+      ],
+      "sucuk": "A mysterious moonlit Sucuk leads a party through a tactical cat adventure.",
+      "sourceStatus": "Publisher release located; no reusable source located.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      },
+      "referenceBuild": {
+        "url": "https://cache.armorgames.com/files/games/sonny-2-2900.swf?v=1373587520",
+        "sha256": "c8acd248d9fe2dec955b18ee5b1454f264da8c7e234fede9e342d351e422766c",
+        "bytes": 21272984,
+        "metadata": {
+          "signature": "CWS",
+          "swfVersion": 9,
+          "declaredUncompressedBytes": 24102980,
+          "width": 800.0,
+          "height": 575.0,
+          "frameRate": 30.0,
+          "frameCount": 449,
+          "actionScript": "AS1/AS2",
+          "topLevelTags": 8266,
+          "inspection": "Static metadata only; not executed or gameplay-tested"
+        },
+        "gameplayVerified": false
+      }
+    },
+    {
+      "id": "stick-rpg",
+      "title": "Stick RPG",
+      "edition": "Stick RPG Complete",
+      "category": "RPG and progression",
+      "creator": "XGen Studios",
+      "page": "https://www.xgenstudios.com/",
+      "mechanics": [
+        "daily time budget",
+        "jobs and character stats",
+        "city navigation",
+        "money and housing",
+        "persistent saves"
+      ],
+      "sucuk": "Live a cat's day: nap, explore, earn treats and improve the basket.",
+      "sourceStatus": "Creator catalogue located. Exact original free build URL requires verification; paid sequel is not substituted.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      }
+    },
+    {
+      "id": "learn-to-fly",
+      "title": "Learn to Fly",
+      "edition": "Learn to Fly 2",
+      "category": "RPG and progression",
+      "creator": "Light Bringer Games",
+      "page": "https://www.kongregate.com/en/games/light_bringer777/learn-to-fly-2",
+      "mechanics": [
+        "ramp launches",
+        "pitch, lift and drag",
+        "gliders, boosters and payloads",
+        "distance/damage rewards",
+        "persistent shop upgrades"
+      ],
+      "sucuk": "Build increasingly unlikely flying contraptions for a determined Sucuk.",
+      "sourceStatus": "Developer-uploaded release located; no reusable source located.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      }
+    },
+    {
+      "id": "motherload",
+      "title": "Motherload",
+      "edition": "Original free Flash version",
+      "category": "RPG and progression",
+      "creator": "XGen Studios",
+      "page": "https://www.xgenstudios.com/",
+      "mechanics": [
+        "tile mining",
+        "fuel and hull",
+        "cargo capacity",
+        "surface shop",
+        "depth hazards and rare minerals"
+      ],
+      "sucuk": "Sucuk pilots a digging basket in search of buried treats.",
+      "sourceStatus": "Creator catalogue located; direct game-path request failed certificate verification. No security checks bypassed.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      }
+    },
+    {
+      "id": "duck-life",
+      "title": "Duck Life",
+      "edition": "Duck Life 4",
+      "category": "RPG and progression",
+      "creator": "Wix Games",
+      "page": "https://www.kongregate.com/en/games/wixgames/ducklife-4",
+      "mechanics": [
+        "distinct training minigames",
+        "skill stats",
+        "team racing",
+        "energy and food",
+        "tournament progression"
+      ],
+      "sucuk": "Train a team of kittens in running, climbing, swimming and flying toys.",
+      "sourceStatus": "Developer-uploaded release located. Training games and race simulation must both be preserved.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      }
+    },
+    {
+      "id": "binding-of-isaac",
+      "title": "The Binding of Isaac",
+      "edition": "Original 2011 Flash game; public demo reference",
+      "category": "Action and shooters",
+      "creator": "Edmund McMillen and Florian Himsl",
+      "page": "https://www.newgrounds.com/portal/view/581168",
+      "mechanics": [
+        "room-based twin-stick combat",
+        "procedural floors",
+        "item synergies",
+        "hearts, keys, bombs and shops",
+        "boss progression"
+      ],
+      "sucuk": "Sucuk explores a toy-filled basement and fires yarn tears.",
+      "sourceStatus": "Author-published demo covers two of eight levels. It is not the complete commercial 2011 game.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      }
+    },
+    {
+      "id": "madness-interactive",
+      "title": "Madness Interactive",
+      "edition": "Original 2003 Flash release",
+      "category": "Action and shooters",
+      "creator": "Flecko / Max Abernethy",
+      "page": "https://www.newgrounds.com/portal/view/118826",
+      "mechanics": [
+        "independent mouse aim",
+        "weapon pickup and throwing",
+        "bullet time",
+        "arena and sandbox modes",
+        "ragdoll interactions"
+      ],
+      "sucuk": "Toy Sucuk battles cardboard opponents using feather blasters.",
+      "sourceStatus": "Original author release links flecko.net downloads. Historical source-page lead found; license and files not yet verified.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      }
+    },
+    {
+      "id": "thing-thing",
+      "title": "Thing-Thing",
+      "edition": "Thing-Thing Arena 3",
+      "category": "Action and shooters",
+      "creator": "Weasel / Diseased Productions",
+      "page": "https://www.newgrounds.com/wiki/games/medal-games/thingthing-arena-3",
+      "mechanics": [
+        "side-view arena shooting",
+        "weapon handling",
+        "character customisation",
+        "kill combos and achievements"
+      ],
+      "sucuk": "A customisable toy-cat arena fighter with stuffing effects.",
+      "sourceStatus": "Publisher's game guide located. Exact release binary still requires verification.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      }
+    },
+    {
+      "id": "boxhead",
+      "title": "Boxhead",
+      "edition": "Boxhead 2Play",
+      "category": "Action and shooters",
+      "creator": "Sean Cooper",
+      "page": "https://armorgames.com/play/158/boxhead-2play",
+      "mechanics": [
+        "isometric arena movement",
+        "weapon unlock combos",
+        "enemy waves",
+        "barrels and barricades",
+        "local co-op and deathmatch"
+      ],
+      "sucuk": "Box-shaped Sucuk and a friend defend cardboard arenas.",
+      "sourceStatus": "Publisher release located; local multiplayer is part of the fidelity target.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      },
+      "referenceBuild": {
+        "url": "https://cache.armorgames.com/files/games/boxhead-2play-158.swf?v=1373587520",
+        "sha256": "34ff145d96891ddea20278700c8b1fb6fd6273ca0e71b73d8bdf0df183fdbece",
+        "bytes": 1943061,
+        "metadata": {
+          "signature": "CWS",
+          "swfVersion": 8,
+          "declaredUncompressedBytes": 6477486,
+          "width": 640.0,
+          "height": 480.0,
+          "frameRate": 50.0,
+          "frameCount": 63,
+          "actionScript": "AS1/AS2",
+          "topLevelTags": 1662,
+          "inspection": "Static metadata only; not executed or gameplay-tested"
+        },
+        "gameplayVerified": false
+      }
+    },
+    {
+      "id": "strike-force-heroes",
+      "title": "Strike Force Heroes",
+      "edition": "Strike Force Heroes 2",
+      "category": "Action and shooters",
+      "creator": "Sky9 Games",
+      "page": "https://armorgames.com/strike-force-heroes-2-game/14775",
+      "mechanics": [
+        "platform shooting",
+        "classes and loadouts",
+        "AI teams",
+        "campaign missions",
+        "weapon loot and levelling"
+      ],
+      "sucuk": "A squad of specialised toy cats protects the house.",
+      "sourceStatus": "Official publisher release and release announcement located; source not located.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      },
+      "referenceBuild": {
+        "url": "https://cache.armorgames.com/files/games/strike-force-heroes--14775.swf?v=1791566236",
+        "sha256": "767de33211f49be6fd91be09f2ed9c6b54ddfa82b594d6b3d9f013b4b10618c7",
+        "bytes": 16361371,
+        "metadata": {
+          "signature": "FWS",
+          "swfVersion": 15,
+          "declaredUncompressedBytes": 16361371,
+          "width": 800.0,
+          "height": 600.0,
+          "frameRate": 30.0,
+          "frameCount": 25,
+          "actionScript": "AS3",
+          "topLevelTags": 3435,
+          "inspection": "Static metadata only; not executed or gameplay-tested"
+        },
+        "gameplayVerified": false
+      }
+    },
+    {
+      "id": "last-stand",
+      "title": "The Last Stand",
+      "edition": "The Last Stand 2",
+      "category": "Action and shooters",
+      "creator": "Con Artist Games",
+      "page": "https://armorgames.com/play/1443/the-last-stand-2",
+      "mechanics": [
+        "night barricade defense",
+        "daytime searches",
+        "survivors and weapons",
+        "travel choices",
+        "limited campaign days"
+      ],
+      "sucuk": "Protect a blanket fort at night and scavenge toys during the day.",
+      "sourceStatus": "Publisher release located; campaign state and search tables require reference inspection.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      },
+      "referenceBuild": {
+        "url": "https://cache.armorgames.com/files/games/the-last-stand-2-1443.swf?v=1373587520",
+        "sha256": "1974d2536cef702a1d0f42bcfa19a12c7057be68a81ae93b311aea52c3235868",
+        "bytes": 8819253,
+        "metadata": {
+          "signature": "CWS",
+          "swfVersion": 8,
+          "declaredUncompressedBytes": 9619918,
+          "width": 800.0,
+          "height": 420.0,
+          "frameRate": 35.0,
+          "frameCount": 7,
+          "actionScript": "AS1/AS2",
+          "topLevelTags": 2788,
+          "inspection": "Static metadata only; not executed or gameplay-tested"
+        },
+        "gameplayVerified": false
+      }
+    },
+    {
+      "id": "sas-zombie-assault",
+      "title": "SAS: Zombie Assault",
+      "edition": "SAS: Zombie Assault 3",
+      "category": "Action and shooters",
+      "creator": "Ninja Kiwi",
+      "page": "https://www.kongregate.com/en/games/ninjakiwi/sas-zombie-assault-3",
+      "mechanics": [
+        "top-down shooting",
+        "barricade repairs",
+        "weapon progression",
+        "enemy waves",
+        "network co-op"
+      ],
+      "sucuk": "A cat squad holds household rooms against malfunctioning toys.",
+      "sourceStatus": "Developer-uploaded client release located. Original network services need separate recovery/reimplementation.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      }
+    },
+    {
+      "id": "raft-wars",
+      "title": "Raft Wars",
+      "edition": "Original Flash release",
+      "category": "Action and shooters",
+      "creator": "BubbleBox / Martijn Kunst",
+      "page": "https://www.kongregate.com/en/games/bubblebox/raft-wars",
+      "mechanics": [
+        "turn-based projectile arcs",
+        "knockback and health",
+        "AI aiming",
+        "raft and weapon upgrades"
+      ],
+      "sucuk": "Sucuk defends a floating basket with bouncing yarn shots.",
+      "sourceStatus": "Original publisher upload located; source not located.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      }
+    },
+    {
+      "id": "bowman",
+      "title": "Bowman",
+      "edition": "Classic Flash Bowman",
+      "category": "Action and shooters",
+      "creator": "Syko227",
+      "page": "https://www.stickpage.com/bowmangameplay.shtml",
+      "mechanics": [
+        "drag-to-set angle and power",
+        "turn-based arrows",
+        "wind and terrain settings",
+        "AI and local two-player"
+      ],
+      "sucuk": "Two cats lob feather arrows across the garden.",
+      "sourceStatus": "Original publisher explicitly links a downloadable SWF; verification recorded separately.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      },
+      "referenceBuild": {
+        "url": "https://farm.stickpage.com/bowmangame.swf",
+        "sha256": "9b0af455318c62253548c511c0179f423400f0904a61a13897a1622a142e37df",
+        "bytes": 34547,
+        "metadata": {
+          "signature": "CWS",
+          "swfVersion": 6,
+          "declaredUncompressedBytes": 55306,
+          "width": 400.0,
+          "height": 300.0,
+          "frameRate": 30.0,
+          "frameCount": 4,
+          "actionScript": "AS1/AS2",
+          "topLevelTags": 178,
+          "inspection": "Static metadata only; not executed or gameplay-tested"
+        },
+        "gameplayVerified": false
+      }
+    },
+    {
+      "id": "territory-war",
+      "title": "Territory War",
+      "edition": "Original Flash mission/custom-battle game",
+      "category": "Action and shooters",
+      "creator": "Afro-Ninja",
+      "page": "https://armorgames.com/play/279/territory-war",
+      "mechanics": [
+        "team turns",
+        "limited movement",
+        "grenades, guns and melee",
+        "terrain and falling",
+        "missions and local versus"
+      ],
+      "sucuk": "Cat teams contest furniture islands with soft toy weapons.",
+      "sourceStatus": "Publisher release located; no reusable source located.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      },
+      "referenceBuild": {
+        "url": "https://cache.armorgames.com/files/games/territory-war-279.swf?v=1373587520",
+        "sha256": "7d451faa6b9c61412fa72bc1175d259931588062e9f606b683d31444e3e4f92e",
+        "bytes": 1005978,
+        "metadata": {
+          "signature": "CWS",
+          "swfVersion": 8,
+          "declaredUncompressedBytes": 1336168,
+          "width": 650.0,
+          "height": 500.0,
+          "frameRate": 40.0,
+          "frameCount": 524,
+          "actionScript": "AS1/AS2",
+          "topLevelTags": 3152,
+          "inspection": "Static metadata only; not executed or gameplay-tested"
+        },
+        "gameplayVerified": false
+      }
+    },
+    {
+      "id": "crush-castle",
+      "title": "Crush the Castle",
+      "edition": "Crush the Castle 2",
+      "category": "Action and shooters",
+      "creator": "Armor Games / Joey Betz",
+      "page": "https://armorgames.com/play/6137/crush-the-castle-2",
+      "mechanics": [
+        "timed trebuchet release",
+        "rigid-body towers",
+        "multiple ammunition types",
+        "medal limits",
+        "level editor"
+      ],
+      "sucuk": "Launch yarn from a catapult at elaborate cardboard towers.",
+      "sourceStatus": "Official publisher release located; physics constants and structure data require measurement.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      },
+      "referenceBuild": {
+        "url": "https://cache.armorgames.com/files/games/crush-the-castle-2-6137.swf?v=1373587523",
+        "sha256": "4c3be6e385f96c8416d7276c9fd4f557cb81b750e79d6de64a195e49d73b9012",
+        "bytes": 10983516,
+        "metadata": {
+          "signature": "CWS",
+          "swfVersion": 10,
+          "declaredUncompressedBytes": 11790496,
+          "width": 800.0,
+          "height": 550.0,
+          "frameRate": 40.0,
+          "frameCount": 3,
+          "actionScript": "AS3",
+          "topLevelTags": 2312,
+          "inspection": "Static metadata only; not executed or gameplay-tested"
+        },
+        "gameplayVerified": false
+      }
+    },
+    {
+      "id": "qwop",
+      "title": "QWOP",
+      "edition": "Original Flash QWOP; current creator web port is a secondary reference",
+      "category": "Odd but legendary",
+      "creator": "Bennett Foddy",
+      "page": "https://www.foddy.net/legacy/Athletics.html",
+      "mechanics": [
+        "separate thigh and calf controls",
+        "articulated joints",
+        "balance and ground contacts",
+        "distance scoring"
+      ],
+      "sucuk": "Four deliberately awkward paw controls try to move Sucuk down a hallway.",
+      "sourceStatus": "Creator page now loads QWOP.min.js. That current port must not be mislabeled an original Flash SWF.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      }
+    },
+    {
+      "id": "interactive-buddy",
+      "title": "Interactive Buddy",
+      "edition": "Interactive Buddy v1.01",
+      "category": "Odd but legendary",
+      "creator": "shock-value",
+      "page": "https://www.newgrounds.com/portal/view/218014",
+      "mechanics": [
+        "ragdoll sandbox",
+        "tools and forces",
+        "money from interactions",
+        "unlockable toys",
+        "persistent preferences"
+      ],
+      "sucuk": "Play gently with a floppy toy Sucuk using yarn, treats and cushions.",
+      "sourceStatus": "Original author release located; source not located.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      }
+    },
+    {
+      "id": "pandemic-2",
+      "title": "Pandemic 2",
+      "edition": "Pandemic II Flash release",
+      "category": "Odd but legendary",
+      "creator": "Dark Realm Studios",
+      "page": "https://www.newgrounds.com/portal/view/448950",
+      "mechanics": [
+        "regional populations",
+        "travel links and closures",
+        "symptom/resistance upgrades",
+        "visibility and response",
+        "simulation speed"
+      ],
+      "sucuk": "Spread a harmless worldwide obsession with Sucuk through toy deliveries and cat videos.",
+      "sourceStatus": "Original author release located. A faithful system needs the region graph and response rules, not only a map.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      }
+    },
+    {
+      "id": "papas-pizzeria",
+      "title": "Papa's Pizzeria",
+      "edition": "Original Flash Papa's Pizzeria v2 binary",
+      "category": "Odd but legendary",
+      "creator": "Flipline Studios",
+      "page": "https://www.flipline.com/games/papaspizzeria/index.html",
+      "mechanics": [
+        "order queue",
+        "topping placement",
+        "baking timers",
+        "slice-angle grading",
+        "customer patience and tips"
+      ],
+      "sucuk": "Run Sucuk's snack kitchen, preparing cat-friendly pretend pizzas.",
+      "sourceStatus": "Creator-hosted papaspizzeria_v2.swf located; download verification recorded separately.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      },
+      "referenceBuild": {
+        "url": "https://i.flipline.com/gamefiles/papaspizzeria/papaspizzeria_v2.swf",
+        "sha256": "86ebb12d28020e534ebd5c9a04788f971cff08a4c73b900c40abff137a40d2c4",
+        "bytes": 2842151,
+        "metadata": {
+          "signature": "CWS",
+          "swfVersion": 9,
+          "declaredUncompressedBytes": 3808044,
+          "width": 600.0,
+          "height": 450.0,
+          "frameRate": 30.0,
+          "frameCount": 7,
+          "actionScript": "AS1/AS2",
+          "topLevelTags": 4350,
+          "inspection": "Static metadata only; not executed or gameplay-tested"
+        },
+        "gameplayVerified": false
+      }
+    },
+    {
+      "id": "transformice",
+      "title": "Transformice",
+      "edition": "Established classic Flash room/shaman ruleset; pin client version before work",
+      "category": "Odd but legendary",
+      "creator": "Atelier 801",
+      "page": "https://www.transformice.com/official-websource/index.php",
+      "mechanics": [
+        "multiplayer room rounds",
+        "shaman construction",
+        "physics objects",
+        "cheese-and-hole scoring",
+        "accounts, cosmetics and chat"
+      ],
+      "sucuk": "Cats cooperate across physics rooms to bring treats back to the basket.",
+      "sourceStatus": "Official distributions identified. Full recreation needs a separately hosted authoritative room server and persistence; no original reusable server source verified.",
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      }
+    },
+    {
+      "id": "platform-racing-2",
+      "title": "Platform Racing 2",
+      "edition": "Classic Flash gameplay; creator's Haxe/OpenFL migration as source reference",
+      "category": "Odd but legendary",
+      "creator": "Jacob Grahn / Jiggmin",
+      "page": "https://www.kongregate.com/en/games/jiggmin/platform-racing-2",
+      "mechanics": [
+        "network racing",
+        "tile and item rules",
+        "stats and hats",
+        "user levels and campaign",
+        "lobby and accounts"
+      ],
+      "sucuk": "Customisable Sucuk racers compete through player-built household courses.",
+      "sourceStatus": "Creator publishes MIT code for client and server. Client art has separate terms; current Haxe port documents unfinished/stub screens and is not automatically a complete working game.",
+      "sources": [
+        "https://github.com/jacob-grahn/platform-racing-2-client",
+        "https://github.com/jacob-grahn/platform-racing-2-server"
+      ],
+      "implementation": {
+        "status": "reference-research",
+        "exactParityVerified": false
+      }
+    }
+  ]
+}

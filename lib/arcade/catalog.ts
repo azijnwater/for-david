@@ -1,5 +1,17 @@
 export const games = [
   {
+    id: "line-rider",
+    name: "Cushion Rider",
+    genre: "Creative",
+    classic: "Line Rider",
+    description:
+      "Draw a route. Ride a cushion sled. See what happens to Sucuk.",
+    controls:
+      "Draw left to right, then play. Pencil, straight lines, erasing, a start flag, pan and zoom are available. Space plays or pauses; arrow keys pan while paused.",
+    goal: "Build your own track. Export it to keep or share it.",
+    art: "sled",
+  },
+  {
     id: "snake",
     name: "Yarn trail",
     genre: "Arcade",
